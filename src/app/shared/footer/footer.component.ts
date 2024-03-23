@@ -8,7 +8,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
   imports: [FooterLinksComponent, FooterOthersComponent],
   template: `
     <footer 
-      class="w-[min(80rem,100%-2.5rem)] border-t-2 border-black mx-auto text-current py-5 mt-20 text-sm
+      class="w-[min(80rem,100%-2.5rem)] border-t-2 border-current mx-auto text-current py-5 mt-20 text-sm
       grid grid-cols-4 gap-4 relative
       max-md:grid-cols-2 max-[359px]:grid-cols-1">
       <ul class="pr-12 text-balance">
@@ -76,7 +76,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
         </ul>    
       </figure>
     </footer>
-    <ul class="text-black w-[min(80rem,100%-2.5rem)] mx-auto flex justify-end text-xs gap-x-2.5 gap-y-2 flex-wrap">
+    <ul class="text-current w-[min(80rem,100%-2.5rem)] mx-auto flex justify-end text-xs py-2 gap-x-2.5 gap-y-2 flex-wrap">
       <li><a href="">Términos y Condiciones</a></li>
       <li><a href="">Política de Privacidad</a></li>
       <li><a href="">Política de Cookies</a></li>

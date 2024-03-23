@@ -11,10 +11,10 @@ import { TreatmentsService } from '../../services/treatments.service';
   <h1 class="text-3xl font-bold mb-4">Cita previa</h1>
     <div class="flex gap-x-5 max-lg:flex-col-reverse max-lg:gap-y-8">
       <!-- <information></information> -->
-      <div class="w-full flex flex-col p-7 shadow-lg bg-white">
+      <div class="w-full flex flex-col p-7 shadow-lg">
         <div class="flex gap-x-12">
           <p class="uppercase text-2xl">Escoge una zona</p>
-          <select #select name="" id="" (input)="getTreatmentType(select.value)">
+          <select #select class="bg-transparent" name="" id="" (input)="getTreatmentType(select.value)">
             <option value="cara">cara</option>
             <option value="cuerpo">cuerpo</option>
             <option value="piel">piel</option>

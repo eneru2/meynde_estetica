@@ -8,7 +8,7 @@ import '@splidejs/splide/css';
   imports: [],
   template: `
     <section class="splide mt-12" id="slider2" aria-label="Ofertas y especiales">
-      <h2 class="mb-4 uppercase text-2xl">Nuestras ofertas y especiales(Pronto)</h2>
+      <h2 class="mb-4 uppercase text-2xl">Nuestras ofertas y especiales (Pronto)</h2>
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">

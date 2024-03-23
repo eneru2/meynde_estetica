@@ -98,9 +98,9 @@ export class IndividualTreatmentComponent implements OnInit {
   treatment:any
   treatmentSlug!: string | null  
 
-  treatmentDescriptionButton:boolean = false
+  treatmentDescriptionButton:boolean = true
   treatmentDayButton:boolean = false
-  treatmentBenefitsButton:boolean = true
+  treatmentBenefitsButton:boolean = false
 
   
   changeTab(button:string){
