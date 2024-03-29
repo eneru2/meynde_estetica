@@ -24,13 +24,22 @@ import { TreatmentsService } from '../../../services/treatments.service';
         alt="{{treatment.imgAlt}}"
         draggable="false">
     </div>
-    <div class="flex mt-[calc(60vh-10rem+1.25rem)] gap-x-4 max-[960px]:mt-[calc(60vh-10rem+1.25rem)]">
-      <button (click)="changeTab('description')">¿Qué es?</button>
-      <button (click)="changeTab('treatmentDay')">Día tratamiento</button>
-      <button (click)="changeTab('benefits')">Beneficios</button>      
+    <div class="flex mt-[calc(60vh-10rem+1.25rem)] gap-x-4 max-[960px]:mt-[calc(60vh-5rem)]">
+      <button
+        [ngClass]="{'bg-main text-white': treatmentDescriptionButton}"
+        class=" uppercase font-semibold px-2 py-1" 
+        (click)="changeTab('description')">¿Qué es?</button>
+      <!-- <button
+        [ngClass]="{'bg-main text-white': treatmentDayButton}"
+        class=" uppercase font-semibold px-2 py-1" 
+        (click)="changeTab('treatmentDay')">Día tratamiento</button> -->
+      <button
+        [ngClass]="{'bg-main text-white': treatmentBenefitsButton}"
+        class=" uppercase font-semibold px-2 py-1" 
+        (click)="changeTab('benefits')">Beneficios</button>      
     </div>
-    <div class="flex py-4">
-      <div class="w-3/5">
+    <div class="flex py-4 gap-x-12">
+      <div class="max-w-[60%]">
         @if (treatmentDescriptionButton) {
           <p class="">{{treatment.description}}</p>      
         }
@@ -49,14 +58,16 @@ import { TreatmentsService } from '../../../services/treatments.service';
           </ul>
         }
       </div>
-      <ul class="flex flex-col justify-between w-80 p-4 gap-y-3 shadow-md">
+      <ul class="flex flex-col justify-between w-full h-72 p-4 gap-y-3 shadow-md">
         <li class="self-center font-semibold text-lg">{{treatment.name}}</li>
         <li class="flex justify-between">Duración<span class="font-semibold">{{treatment.duration}}</span></li>
         <li class="flex justify-between">Resultados<span class="font-semibold">{{treatment.results}}</span></li>
         <li class="flex justify-between">Vuelta al trabajo (est)<span class="font-semibold">{{treatment.backToWork}}</span></li>
         <li class="flex justify-between">Precio
           <span class="font-semibold">
-            @if (treatment.sessionsAvailable) {
+            @if (
+              treatment.sessionsAvailable && 
+              object.values(treatment.sessionsAvailable)[0] !== object.values(treatment.sessionsAvailable).slice(-1)[0]) {
               {{object.values(treatment.sessionsAvailable)[0] + " - " + object.values(treatment.sessionsAvailable).slice(-1)[0] + " €"}}
             } @else {
               {{treatment.price}}€
@@ -66,19 +77,19 @@ import { TreatmentsService } from '../../../services/treatments.service';
         <li class="self-center"><button class="hover:bg-light-main bg-main text-zinc-100 px-4 py-1 text-lg transition-all">Pide cita</button></li>
       </ul>
     </div>
-    <h2>Preguntas frecuentes</h2>
-    @for (item of treatment.requiredFaq; track $index) {
-      <details>        
-        <summary>{{item.title}}</summary>
+    <h2 class="text-2xl font-medium mb-2">Preguntas frecuentes</h2>
+    <!-- @for (item of treatment.requiredFaq; track $index) {
+      <details name="faq">        
+        <summary class="text-main cursor-pointer">{{item.title}}</summary>
         <p>{{item.description}}</p>
       </details>
-    }
+    } -->
 
     @if(treatment.optionalFaq){    
       @for (item of treatment.optionalFaq; track $index) {
-        <details>        
-          <summary>{{item.title}}</summary>
-          <p>{{item.description}}</p>
+        <details class="my-2 select-none open:select-text" name="faq">        
+          <summary class="cursor-pointer">{{item.title}}</summary>
+          <p class="pl-5 mt-2">{{item.description}}</p>
         </details>
       }
     }

@@ -8,8 +8,7 @@ import { FooterComponent } from './shared/footer/footer.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
-    <app-header></app-header>
-    <!-- mt-40 max-md:mt-4 -->
+    <app-header></app-header>    
     <main
       class="w-[min(80rem,_100%-2.5rem)] mx-auto mt-40 max-[960px]:mt-24">
       <router-outlet></router-outlet>

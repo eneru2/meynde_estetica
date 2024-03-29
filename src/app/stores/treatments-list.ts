@@ -304,9 +304,21 @@ let TreatmentsList = [
     ],
     optionalFaq: [
       {
-        title: "s",
-        description: "a"
-      }
+        title: "¿En qué consiste el tratamiento relajante muscular?",
+        description: "El tratamiento relajante muscular consiste en la aplicación de una sustancia especializada en áreas específicas del rostro para relajar los músculos responsables de las arrugas y líneas de expresión."
+      },
+      {
+        title: "¿Cuánto tiempo dura el efecto del tratamiento?",
+        description: "Los resultados del tratamiento suelen durar entre tres y seis meses, dependiendo de factores individuales como el metabolismo y el estilo de vida del paciente."
+      },
+      {
+        title: "¿Es doloroso el procedimiento?",
+        description: "La mayoría de los pacientes experimentan solo una ligera molestia durante el procedimiento. Se puede aplicar un anestésico tópico para minimizar cualquier incomodidad."
+      },
+      {
+        title: "¿Cuál es la diferencia entre el tratamiento relajante muscular y el botox?",
+        description: "El tratamiento relajante muscular es una alternativa similar al botox, pero no contiene la misma sustancia activa. Ambos procedimientos funcionan de manera similar, relajando los músculos faciales para reducir las arrugas y líneas de expresión."
+      },
     ]
   },
   {
@@ -353,15 +365,27 @@ let TreatmentsList = [
     whiteText: true,
     requiredFaq: [
       {
-        title: "s",
-        description: "a"
+        title: "¿Qué es el ácido hialurónico y cómo funciona en tratamientos estéticos?",
+        description: "El ácido hialurónico es una sustancia naturalmente presente en el cuerpo humano que tiene la capacidad única de retener el agua. En tratamientos estéticos, se utiliza para rellenar arrugas, restaurar volumen facial perdido y mejorar la hidratación y la elasticidad de la piel."
       }
     ],
     optionalFaq: [
       {
-        title: "s",
-        description: "a"
-      }
+        title: "¿Cuánto tiempo duran los resultados de los tratamientos con ácido hialurónico?",
+        description: "La duración de los resultados puede variar según la fórmula utilizada y la zona tratada, pero generalmente los efectos pueden durar entre 6 meses y 1 año. Después de este tiempo, el ácido hialurónico se degrada de forma natural en el cuerpo y es reabsorbido."
+      },
+      {
+        title: "¿Qué es el ácido hialurónico y cómo funciona en tratamientos estéticos?",
+        description: "El ácido hialurónico es una sustancia naturalmente presente en el cuerpo humano que tiene la capacidad única de retener el agua. En tratamientos estéticos, se utiliza para rellenar arrugas, restaurar volumen facial perdido y mejorar la hidratación y la elasticidad de la piel."
+      },
+      {
+        title: "¿Para qué áreas del rostro se puede utilizar el ácido hialurónico?",
+        description: "El ácido hialurónico se puede utilizar en diversas áreas del rostro, incluyendo los labios, las mejillas, las líneas de expresión alrededor de la boca y los ojos, así como para definir el contorno facial y corregir la nariz."
+      },
+      {
+        title: "¿Hay algún cuidado especial después de recibir un tratamiento con ácido hialurónico?",
+        description: "Es recomendable evitar la exposición excesiva al sol y el ejercicio intenso durante las primeras 24-48 horas después del tratamiento. También se aconseja evitar el maquillaje pesado y los tratamientos faciales intensos durante al menos una semana. Tu médico te proporcionará instrucciones específicas según tus necesidades individuales."
+      },
     ]
   },
   {

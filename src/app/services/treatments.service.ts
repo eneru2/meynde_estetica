@@ -6,13 +6,11 @@ import TreatmentsList from '../stores/treatments-list';
 })
 export class TreatmentsService {
 
-  constructor() {    
-  }
-
+  constructor() {}
   filterOut(treatmentType:string, query?:string) {
-    if (query) {      
+    if (query) {
       return TreatmentsList
-      .filter((item) => {                  
+      .filter((item) => {
         if(treatmentType == "todos" || item.type == treatmentType){
           switch(item.name.toLowerCase().includes(query) || 
           item.description?.toLowerCase().includes(query) || 
@@ -20,7 +18,7 @@ export class TreatmentsService {
             case true:
               return item
             case false:
-              return          
+              return
           }
         } else return
       })
@@ -34,7 +32,7 @@ export class TreatmentsService {
         return 0
       }) 
     } else return TreatmentsList
-      .filter((item) => {                  
+      .filter((item) => {
         if(treatmentType == "todos" || item.type == treatmentType){
           return item
         } else return

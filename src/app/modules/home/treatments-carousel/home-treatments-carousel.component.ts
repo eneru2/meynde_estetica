@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
-// TODO
+// Done
 // Incluir limpieza facial en el carrusel
-// Niquelar tratamientos de la página principal
 // Sobre nosotros dark
+// TODO
 // Chatgpt Dr.Mezones
 // Actualizar información de David y alistar todas
+// Niquelar tratamientos de la página principal
 // OPCIONALES:
 //  Estilizar contacto
 @Component({
