@@ -99,7 +99,7 @@ import '@splidejs/splide/css';
             </a>
             <p class="text-md text-slate-500 mt-3 mb-1.5">facial</p>
             <p class=" text-lg font-normal capitalize">
-              <a href="/tratamientos/relleno-labios">Relleno de labios</a>
+              <a href="/tratamientos/relleno-labios">Aumento de labios</a>
             </p>
           </li>
           <li class="splide__slide">
@@ -141,7 +141,7 @@ import '@splidejs/splide/css';
             </a>
             <p class="text-md text-slate-500 mt-3 mb-1.5">facial</p>
             <p class="text-lg font-normal capitalize">
-              <a href="">Eliminar verrugas, lunares y puntos de rubí</a>
+              <a href="">Eliminación verrugas, lunares y puntos rubí</a>
             </p>
           </li>
         </ul>

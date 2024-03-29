@@ -39,7 +39,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
         <div class="py-24 flex flex-col w-[55%]
         max-[960px]:w-full max-[960px]:py-0">
           <h2 class="text-zinc-700 dark:text-slate-50 text-2xl capitalize">Dr. Mezones</h2>
-          <h3 class="text-xl mb-4 font-bold">Director médico y Doctor estético</h3>
+          <h3 class="text-xl mb-4 font-bold">Especialista en medicina estética y del deporte</h3>
           <p class="text-zinc-700 dark:text-slate-50">
             En el centro médico Meynde, nos esforzamos por acercar la medicina estética haciendo más asequible y accesible este servicio para todos en el área de Barcelona
             Nos enorgullecemos de trabajar como una familia para conseguir los resultados y satisfacción de nuestros clientes. Y nos encantaria tratar como uno mas de la familia.
@@ -67,7 +67,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
           class="flex flex-wrap justify-around gap-x-4 gap-y-12 mt-10">
           <card
             name="Claudia"
-            profession="Asistente médica y esteticista"
+            profession="Gestión ejecutiva"
             description="Claudia se unió a nosotros en 2021, ella a pivotado entre diversos roles dentro de Meynde. Desde la recepción a esteticien."
             imgAlt="Foto de Claudia"
             avifSrc512x="assets/imgs/equipo/claudia/claudia-512x.avif"
@@ -78,8 +78,8 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             jpgSrc768x="assets/imgs/equipo/claudia/claudia-768x.jpg"/>
           <card
             name="Esther"
-            profession="Doctora"
-            description="Esther es la integrante más reciente de Meynde. Es muy animada y divertida, a todos le anima su compañia. Ella se encarga de hacer reconocimientos."
+            profession="Medicina"
+            description="Esther es la integrante más reciente de Meynde. Es muy animada y divertida, a todos le anima su compañia. Ella se encarga de hacer reconocimientos médicos."
             imgAlt="Foto de Esther"
             avifSrc512x="assets/imgs/equipo/esther/esther-512x.avif"
             webpSrc512x="assets/imgs/equipo/esther/esther-512x.webp"
@@ -89,7 +89,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             jpgSrc768x="assets/imgs/equipo/esther/esther-768x.jpg"/>
           <card
             name="Alejandro"
-            profession="Psicólogo"
+            profession="Psicólogia"
             description="Alejandro lleva en Meynde desde 2018. Es el integrante más antiguo del equipo. El es psicólogo y se encarga de realizar pruebas en el centro."
             imgAlt="Foto de Alejandro"
             avifSrc512x="assets/imgs/equipo/alejandro/alejandro-512x.avif"
@@ -111,7 +111,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             jpgSrc768x="assets/imgs/equipo/david/david-768x.jpg"/>
           <card
             name="Dámaris"
-            profession="Reservas y Recepción"
+            profession="Gestión de Recepción"
             description="Dámaris se unió a nosotros en septiembre de 2020. Su trayectoria incluye una formación académica con bachillerato y un grado superior en fabricación de productos farmacéuticos. Ella dedica la mayor parte de su tiempo a hacer trabajo voluntario. Su cosa favorita es la excelente relación entre compañeros."
             imgAlt="Foto de Dámaris"
             avifSrc512x="assets/imgs/equipo/damaris/damaris-512x.avif"
@@ -123,7 +123,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
           <card
             name="Andrés"
             profession="Diseñador web y marketing"
-            description="Andrés se unio al equipo en 2022 es el diseñador web y el encargado de marketing. El estudió marketing y publicidad y ahora se encarga de las redes sociales del centro. También le parece gracioso escribir esto en tercera persona :')"
+            description="Andrés se unio al equipo en 2022 es el diseñador web y el encargado de marketing. El estudió marketing y publicidad y ahora se encarga de las redes sociales del centro."
             imgAlt="Foto de Andrés"
             avifSrc512x="assets/imgs/equipo/andres/andres-512x.avif"
             webpSrc512x="assets/imgs/equipo/andres/andres-512x.webp"

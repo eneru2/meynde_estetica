@@ -27,9 +27,9 @@ import { Component, OnInit } from '@angular/core';
     max-[960px]:h-[calc(85vh-5.5rem)] max-lg:text-center max-md:text-center ">
       <h1 class="uppercase font-system-ui font-extrabold mb-2 tracking-[0.25em]">Medicina estética en BARCELONA</h1>
       <p
-        class="text-3xl max-w-[40vw] mb-10 leading-relaxed
+        class="text-3xl max-w-[45vw] mb-10 leading-relaxed
         max-lg:max-w-full max-md:text-2xl">
-        Descubre la excelencia en medicina estética, de la mano de nuestro equipo que se preocupa por tu bienestar brindandote tratamientos accesibles y un trato cercano</p>
+        Conoce nuestro centro de medicina estética, conformado por un equipo de excelentes profesionales, quienes estan interesados en tu bienestar y en ofrecerte tratamientos accesibles</p>
       <a
         href="/cita-previa"
         class="bg-main text-zinc-100 font-bold uppercase transition-all px-4 py-3 self-start
