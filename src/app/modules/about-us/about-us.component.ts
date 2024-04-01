@@ -9,7 +9,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
   imports: [AboutUsCardComponent],
   template: `
     <img
-      src="assets/imgs/group.jpg"
+      src="assets/imgs/hero-sobre-nosotros-1920x.jpg"
       alt=""
       class="absolute top-0 left-0 w-screen h-[80vh] object-cover filter brightness-50 z-[-1]
        max-md:h-[60vh]">

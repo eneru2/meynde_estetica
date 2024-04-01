@@ -1,14 +1,3 @@
-export function borrarTratamiento(i:number, treatment:string){
-  const res = confirm(`¿Estas seguro que quieres eliminar el tratamiento: ${treatment} ?`)
-    
-  if (res){
-    TreatmentsList.splice(i, 1)
-  } else {
-    alert("no")
-  }
-}
-
-
 // Sources for treatments images
   // https://www.pexels.com/search/first%20visit/
   // https://www.pexels.com/photo/specialist-doing-laser-treatment-in-spa-salon-5069611/
@@ -19,312 +8,7 @@ let TreatmentsList = [
   {
     backToWork: 'De inmediato',
     benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-      listElements: [
-        {
-          title: "Reafirmación Cutánea:",
-          text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
-        },
-        {
-          title: "Reducción de Arrugas y Líneas de Expresión:",
-          text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
-        },
-        {
-          title: "Mejora de la Textura y Tono de la Piel:",
-          text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
-        },
-        {
-          title: "Estimulación del Flujo Sanguíneo:",
-          text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
-        },
-        {
-          title: "Propiedades Antiinflamatorias:",
-          text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
-        },
-        {
-          title: "Regeneración Celular:",
-          text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
-        },
-        {
-          title: "Tratamiento No Invasivo:",
-          text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
-        },         
-      ]
-    },
-    condition: 'Para manchas, arrugas y flacidez',
-    description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
-    duration: '1 hora',
-    generalType: 'aparatologia',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Facial completo',
-    price: 100,
-    results: '3 - 6 semanas',
-    searchTerm: 'radiofrequencia led dermapen facial completo arrugas manchas flacidez',        
-    sessionsAvailable: {
-      "1 sesión": 100,              
-      "3 sesiones": 200
-    },
-    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
-    slug: 'facial-completo',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: "Radiofrecuencia, dermapen y luz led",
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ]
-  },
-  {
-    backToWork: 'De inmediato',
-    benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-      listElements: [
-        {
-          title: "Reafirmación Cutánea:",
-          text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
-        }
-      ]
-    },
-    condition: '',
-    description: 'Elimina verrugas, lunares y puntos de rubí. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae temporibus fugit dolores expedita qui quibusdam non totam aut maiores quasi, harum deleniti error provident enim quis saepe aspernatur asperiores distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae temporibus fugit dolores expedita qui quibusdam non totam aut maiores quasi, harum deleniti error provident enim quis saepe aspernatur asperiores distinctio!',
-    duration: '30 minutos',
-    generalType: 'aparatologia / estetica',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Limpieza facial',
-    price: 30,
-    results: '3 - 6 semanas',
-    searchTerm: 'microdermoabrasion radiofrequencia led mascarilla masaje',        
-    sessionsAvailable: '',    
-    shortDescription: 'Elimina verrugas, lunares y puntos de rubí',
-    slug: 'limpieza-facial',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: '',
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ]
-  },
-  {
-    backToWork: 'De inmediato',
-    benefits: 
-      {
-        initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-        listElements: [
-          {
-            title: "Reafirmación Cutánea:",
-            text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
-          },
-          {
-            title: "Reducción de Arrugas y Líneas de Expresión:",
-            text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
-          },
-          {
-            title: "Mejora de la Textura y Tono de la Piel:",
-            text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
-          },
-          {
-            title: "Estimulación del Flujo Sanguíneo:",
-            text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
-          },
-          {
-            title: "Propiedades Antiinflamatorias:",
-            text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
-          },
-          {
-            title: "Regeneración Celular:",
-            text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
-          },
-          {
-            title: "Tratamiento No Invasivo:",
-            text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
-          },         
-        ]
-      },
-    condition: 'Para manchas, arrugas y flacidez',
-    description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
-    duration: '1 hora',
-    generalType: 'aparatologia',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    // Tratamiento para rosácea arañas vasculares y enrojecimiento
-    name: "Tratamiento acné y cicatrices",
-    price: 60,
-    results: '3 - 6 semanas',
-    searchTerm: "luz led dermapen facial completo dermapen carbón carbon activo laser láser facial",            
-    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
-    slug: 'tratamiento-acne-cicatrices',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: "láser facial",
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ]
-  },
-  {
-    backToWork: 'De inmediato',
-    benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-      listElements: [
-        {
-          title: "Reafirmación Cutánea:",
-          text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
-        },
-        {
-          title: "Reducción de Arrugas y Líneas de Expresión:",
-          text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
-        },
-        {
-          title: "Mejora de la Textura y Tono de la Piel:",
-          text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
-        },
-        {
-          title: "Estimulación del Flujo Sanguíneo:",
-          text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
-        },
-        {
-          title: "Propiedades Antiinflamatorias:",
-          text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
-        },
-        {
-          title: "Regeneración Celular:",
-          text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
-        },
-        {
-          title: "Tratamiento No Invasivo:",
-          text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
-        },         
-      ]
-    },
-    condition: 'Para vellos',
-    description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
-    duration: '15 minutos',
-    generalType: 'aparatologia',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Depilación en cara',
-    price: 30,
-    results: '3 - 6 semanas',
-    searchTerm: "laser láser facial fotodepilación diodo",            
-    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
-    slug: 'depilación-cara',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: "láser facial, fotodepilación y diodo",
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ]
-  },
-  // Columna tratamientos en folleto
-  // Cara aun
-  {
-    backToWork: 'De inmediato',
-    benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-      listElements: [
-        {
-          title: "Reducción de arrugas y líneas de expresión: ",
-          text: "Al relajar los músculos faciales responsables de la formación de arrugas, se suavizan y minimizan notablemente las líneas de expresión.",
-        },
-        {
-          title: "Aspecto rejuvenecido: ",
-          text: "Proporciona una apariencia más juvenil y descansada al reducir la apariencia de las arrugas y mejorar la firmeza de la piel."
-        },
-        {
-          title: "Sin tiempo de inactividad: ",
-          text: "No requiere tiempo de recuperación significativo, lo que permite a los pacientes reanudar sus actividades diarias de inmediato."
-        }                  
-      ]
-    },
-    condition: 'arrugas líneas de expresión lineas de expresion',
-    description: "Nuestro tratamiento relajante muscular ofrece una solución efectiva para suavizar las líneas de expresión y arrugas faciales, proporcionando una apariencia rejuvenecida y descansada. Mediante la aplicación de una fórmula especializada, este procedimiento relaja los músculos faciales involucrados en la formación de arrugas, brindando resultados naturales y duraderos. Disfrute de una piel más tersa y revitalizada sin la necesidad de intervenciones quirúrgicas invasivas.",
-    duration: '30 minutos',
-    generalType: 'estetica',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Relajante muscular',
-    price: 100,
-    results: '3 - 6 semanas',
-    searchTerm: "relajante muscular botox entrecejo frente patas de gallo",
-    sessionsAvailable: {
-      "entrecejo": 100,
-      "frente": 150,
-      "patas de gallo": 150,
-      "frente + entrecejo": 225,
-      "patas de gallo + entrecejo": 225,
-      "frente + patas de gallo": 255,
-      "frente + entrecejo + patas de gallo": 320,
-    },
-    shortDescription: "tratamiento facial relajante muscular, diseñado para suavizar arrugas y líneas de expresión, brindando una apariencia rejuvenecida y fresca sin cirugía.",
-    slug: 'relajante-muscular',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: "jeringuilla",
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "¿En qué consiste el tratamiento relajante muscular?",
-        description: "El tratamiento relajante muscular consiste en la aplicación de una sustancia especializada en áreas específicas del rostro para relajar los músculos responsables de las arrugas y líneas de expresión."
-      },
-      {
-        title: "¿Cuánto tiempo dura el efecto del tratamiento?",
-        description: "Los resultados del tratamiento suelen durar entre tres y seis meses, dependiendo de factores individuales como el metabolismo y el estilo de vida del paciente."
-      },
-      {
-        title: "¿Es doloroso el procedimiento?",
-        description: "La mayoría de los pacientes experimentan solo una ligera molestia durante el procedimiento. Se puede aplicar un anestésico tópico para minimizar cualquier incomodidad."
-      },
-      {
-        title: "¿Cuál es la diferencia entre el tratamiento relajante muscular y el botox?",
-        description: "El tratamiento relajante muscular es una alternativa similar al botox, pero no contiene la misma sustancia activa. Ambos procedimientos funcionan de manera similar, relajando los músculos faciales para reducir las arrugas y líneas de expresión."
-      },
-    ]
-  },
-  {
-    backToWork: 'De inmediato',
-    benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+      initialText: "Algunos de los beneficios del ácido hialurónico:",
       listElements: [
         {
           title: "Relleno de arrugas y líneas finas: ",
@@ -391,6 +75,382 @@ let TreatmentsList = [
   {
     backToWork: 'De inmediato',
     benefits: {
+      initialText: "Los beneficios de este tratamiento relajante muscular incluyen:",
+      listElements: [
+        {
+          title: "Reducción de arrugas y líneas de expresión: ",
+          text: "Al relajar los músculos faciales responsables de la formación de arrugas, se suavizan y minimizan notablemente las líneas de expresión.",
+        },
+        {
+          title: "Aspecto rejuvenecido: ",
+          text: "Proporciona una apariencia más juvenil y descansada al reducir la apariencia de las arrugas y mejorar la firmeza de la piel."
+        },
+        {
+          title: "Sin tiempo de inactividad: ",
+          text: "No requiere tiempo de recuperación significativo, lo que permite a los pacientes reanudar sus actividades diarias de inmediato."
+        }                  
+      ]
+    },
+    condition: 'arrugas líneas de expresión lineas de expresion',
+    description: "Nuestro tratamiento relajante muscular ofrece una solución efectiva para suavizar las líneas de expresión y arrugas faciales, proporcionando una apariencia rejuvenecida y descansada. Mediante microinyecciones localizadas de neuromoduladores, este procedimiento relaja los músculos faciales involucrados en la formación de arrugas. Disfrute de una piel más tersa y revitalizada sin la necesidad de intervenciones quirúrgicas invasivas.",
+    duration: '30 minutos',
+    generalType: 'estetica',    
+    img: 'assets/imgs/thumbnail720.jpg',
+    name: 'Relajante muscular',
+    price: 100,
+    results: '1 - 4 semanas',
+    searchTerm: "relajante muscular botox entrecejo frente patas de gallo",
+    sessionsAvailable: {
+      "entrecejo": 100,
+      "frente": 150,
+      "patas de gallo": 150,
+      "frente + entrecejo": 225,
+      "patas de gallo + entrecejo": 225,
+      "frente + patas de gallo": 255,
+      "frente + entrecejo + patas de gallo": 320,
+    },
+    shortDescription: "tratamiento facial relajante muscular, diseñado para suavizar arrugas y líneas de expresión, brindando una apariencia rejuvenecida y fresca sin cirugía.",
+    slug: 'relajante-muscular',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: "jeringuilla",
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      },
+    ],
+    optionalFaq: [
+      {
+        title: "¿En qué consiste el tratamiento relajante muscular?",
+        description: "El tratamiento relajante muscular consiste en la aplicación de una sustancia especializada en áreas específicas del rostro para relajar los músculos responsables de las arrugas y líneas de expresión."
+      },
+      {
+        title: "¿Cuánto tiempo dura el efecto del tratamiento?",
+        description: "Los resultados del tratamiento suelen durar entre tres y seis meses, dependiendo de factores individuales como el metabolismo y el estilo de vida del paciente."
+      },
+      {
+        title: "¿Es doloroso el procedimiento?",
+        description: "La mayoría de los pacientes experimentan solo una ligera molestia durante el procedimiento. Se puede aplicar un anestésico tópico para minimizar cualquier incomodidad."
+      },
+      {
+        title: "¿Cuál es la diferencia entre el tratamiento relajante muscular y el botox?",
+        description: "El tratamiento relajante muscular es una alternativa similar al botox, pero no contiene la misma sustancia activa. Ambos procedimientos funcionan de manera similar, relajando los músculos faciales para reducir las arrugas y líneas de expresión."
+      },
+    ]
+  },
+  {
+    backToWork: 'De inmediato',
+    benefits: {
+      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+      listElements: [
+        {
+          title: "Reafirmación Cutánea: ",
+          text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
+        },
+        {
+          title: "Reducción de Arrugas y Líneas de Expresión: ",
+          text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
+        },
+        {
+          title: "Mejora de la Textura y Tono de la Piel: ",
+          text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
+        },
+        {
+          title: "Estimulación del Flujo Sanguíneo: ",
+          text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
+        },
+        {
+          title: "Propiedades Antiinflamatorias:",
+          text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
+        },
+        {
+          title: "Regeneración Celular:",
+          text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
+        },
+        {
+          title: "Tratamiento No Invasivo:",
+          text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
+        },         
+      ]
+    },
+    condition: 'Para manchas, arrugas y flacidez',
+    description: "El facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
+    duration: '1 hora',
+    generalType: 'aparatologia',    
+    img: 'assets/imgs/thumbnail720.jpg',
+    name: 'Facial completo',
+    price: 100,
+    results: '3 - 6 semanas',
+    searchTerm: 'radiofrequencia led dermapen facial completo arrugas manchas flacidez',        
+    sessionsAvailable: {
+      "1 sesión": 100,              
+      "3 sesiones": 200
+    },
+    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
+    slug: 'facial-completo',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: "Radiofrecuencia, dermapen y luz led",
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ],
+    optionalFaq: [
+      {
+        title: "¿Hay algún tiempo de recuperación después del tratamiento?",
+        description: "Por lo general, no se requiere un tiempo de recuperación prolongado después del tratamiento. Es posible que se experimente enrojecimiento o sensibilidad leve en la piel, pero esto suele ser temporal y desaparece en poco tiempo. Se recomienda evitar la exposición directa al sol y utilizar protector solar después del tratamiento."
+      },
+      {
+        title: "¿Es doloroso el tratamiento?",
+        description:"La mayoría de los pacientes experimentan una sensación tolerable durante el tratamiento. Se puede aplicar crema anestésica tópica para minimizar cualquier molestia. Los niveles de incomodidad pueden variar según la sensibilidad individual de la piel y el umbral de dolor."
+      },
+    ]
+  },
+  {
+    backToWork: 'De inmediato',
+    benefits: {
+      initialText: "El tratamiento de limpieza facial con microdermoabrasión, radiofrecuencia, terapia LED, mascarilla y masaje ofrece una serie de beneficios para la piel, que incluyen:",
+      listElements: [
+        {
+          title: "Exfoliación profunda: ",
+          text: "La microdermoabrasión elimina las células muertas de la piel, desbloquea los poros y promueve la regeneración celular, lo que resulta en una piel más suave y luminosa.",
+        },
+        {
+          title: "Rejuvenecimiento: ",
+          text: "La radiofrecuencia estimula la producción de colágeno y elastina, lo que ayuda a tensar la piel y reducir la apariencia de arrugas y líneas finas, proporcionando un aspecto más juvenil.",
+        },
+        {
+          title: "Hidratación y nutrición: ",
+          text: "La mascarilla aplicada después de los tratamientos anteriores puede proporcionar hidratación adicional, así como nutrientes específicos para las necesidades individuales de la piel.",
+        },
+        {
+          title: "Relajación y bienestar: ",
+          text: "El masaje facial no solo mejora la circulación sanguínea y la oxigenación de la piel, sino que también proporciona una sensación de relajación y bienestar, reduciendo el estrés y la tensión facial.",
+        },
+      ]
+    },
+    condition: '',
+    description: 'El tratamiento de limpieza facial combina varias técnicas para rejuvenecer y revitalizar la piel. Comienza con la microdermoabrasión, un proceso suave que exfolia la capa superficial de la piel, eliminando células muertas y estimulando la regeneración celular. A continuación, se aplica radiofrecuencia, que ayuda a tensar la piel y reducir la apariencia de arrugas y líneas finas. La terapia con LED se utiliza para tratar problemas específicos de la piel, como el acné o la hiperpigmentación, mediante la aplicación de luz de diferentes longitudes de onda. Después, se aplica una mascarilla personalizada para hidratar, calmar o purificar la piel, según sus necesidades individuales. Finalmente, se completa el tratamiento con un relajante masaje facial para mejorar la circulación sanguínea y promover un aspecto radiante y saludable.',
+    duration: '30 minutos',
+    generalType: 'aparatologia / estetica',    
+    img: 'assets/imgs/thumbnail720.jpg',
+    name: 'Limpieza facial',
+    price: 30,
+    results: '3 - 6 semanas',
+    searchTerm: 'microdermoabrasion radiofrequencia led mascarilla masaje',        
+    sessionsAvailable: '',    
+    shortDescription: 'Elimina verrugas, lunares y puntos de rubíLa limpieza facial combina microdermoabrasión, radiofrecuencia, terapia LED, mascarilla y masaje para rejuvenecer y revitalizar la piel, proporcionando una apariencia radiante y saludable.',
+    slug: 'limpieza-facial',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: '',
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ],
+    optionalFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ]
+  },
+  {
+    backToWork: 'De inmediato',
+    benefits: {
+      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+      listElements: [
+        {
+          title: "Reafirmación Cutánea:",
+          text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
+        },
+        {
+          title: "Reducción de Arrugas y Líneas de Expresión:",
+          text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
+        },
+        {
+          title: "Mejora de la Textura y Tono de la Piel:",
+          text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
+        },
+        {
+          title: "Estimulación del Flujo Sanguíneo:",
+          text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
+        },
+        {
+          title: "Propiedades Antiinflamatorias:",
+          text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
+        },
+        {
+          title: "Regeneración Celular:",
+          text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
+        },
+        {
+          title: "Tratamiento No Invasivo:",
+          text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
+        },         
+      ]
+    },
+    condition: 'Para vellos',
+    description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
+    duration: '14 minutos',
+    generalType: 'aparatologia',    
+    img: 'assets/imgs/thumbnail719.jpg',
+    name: 'Depilación en cara',
+    price: 29,
+    results: '2 - 6 semanas',
+    searchTerm: "laser láser facial fotodepilación diodo",            
+    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
+    slug: 'depilación-cara',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: "láser facial, fotodepilación y diodo",
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ],
+    optionalFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ]
+  },
+  {
+    backToWork: 'Inmediato',
+    benefits: {
+      initialText: "Algunos de los beneficios del tratamiento para el bruxismo son:",
+      listElements: [
+        {
+          title: "Prevención de Daños Dentales: ",
+          text: "El tratamiento ayuda a prevenir el desgaste excesivo de los dientes y la posible fractura dental causada por el rechinar y apretar involuntario.",
+        },
+        {
+          title: "Alivio del Dolor: ",
+          text: "Reduce el dolor facial, de cabeza y mandibular asociado con el bruxismo, mejorando la calidad de vida del paciente."
+        },
+        {
+          title: "Mejora de la Calidad del Sueño: ",
+          text: "Al reducir el bruxismo nocturno, el tratamiento puede mejorar la calidad del sueño y reducir los despertares nocturnos involuntarios."
+        },
+        {
+          title: "Prevención de problemas musculares: ",
+          text: "Ayuda a prevenir complicaciones más graves a largo plazo, como la pérdida de dientes o el deterioro de la articulación temporomandibular."
+        }                  
+      ]
+    },
+    condition: 'mordida cruzada, fricción dientes',
+    description: "El tratamiento para el bruxismo es un enfoque terapéutico dirigido a reducir o eliminar el hábito involuntario de rechinar o apretar los dientes, conocido como bruxismo. Este trastorno puede provocar diversos problemas dentales, musculares y de articulación temporomandibular. El objetivo es aliviar el dolor y prevenir el daño dental y muscular asociado con el bruxismo.",
+    duration: '1 hora',
+    generalType: 'estetica',    
+    img: 'assets/imgs/thumbnail720.jpg',
+    name: 'Tratamiento bruxismo',
+    price: 300,
+    results: '1 mes',
+    searchTerm: "bruxismo dientes apretar",    
+    shortDescription: "El tratamiento para el bruxismo busca reducir o eliminar el rechinar y apretar involuntario de los dientes",
+    slug: 'tratamiento-bruxismo',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: "",
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ],
+    optionalFaq: [
+      {
+        title: "¿Qué es el bruxismo y cómo afecta a mi salud bucal?",
+        description: "El bruxismo es un trastorno caracterizado por el rechinar o apretar involuntario de los dientes, generalmente durante el sueño. Esto puede provocar desgaste dental, fracturas, dolor facial, mandibular y de cabeza, así como problemas musculares y de articulación temporomandibular."
+      },      
+      {
+        title: "¿Cuáles son los síntomas comunes del bruxismo?",
+        description: "Los síntomas comunes incluyen dolor de cabeza, dolor facial, mandibular o en el cuello, desgaste dental, sensibilidad dental, dolor de oído, y dificultad para abrir o cerrar la boca."
+      },
+    ]
+  },
+  {
+    backToWork: 'De inmediato',
+    benefits: 
+      {
+        initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+        listElements: [
+          {
+            title: "Reafirmación Cutánea:",
+            text: "La radiofrecuencia estimula la producción de colágeno, mejorando la elasticidad de la piel y reduciendo la flacidez.",
+          },
+          {
+            title: "Reducción de Arrugas y Líneas de Expresión:",
+            text: "El Dermapen, mediante microagujas, fomenta la regeneración celular, suavizando las arrugas y líneas finas."
+          },
+          {
+            title: "Mejora de la Textura y Tono de la Piel:",
+            text: "El Dermapen también ayuda a reducir manchas y cicatrices, promoviendo una piel más uniforme y suave."
+          },
+          {
+            title: "Estimulación del Flujo Sanguíneo:",
+            text: "La radiofrecuencia y la luz LED contribuyen a mejorar la circulación sanguínea, lo que puede favorecer la oxigenación de los tejidos y la eliminación de toxinas."
+          },
+          {
+            title: "Propiedades Antiinflamatorias:",
+            text: "La luz LED tiene propiedades antiinflamatorias, lo que puede ayudar a reducir la inflamación y enrojecimiento de la piel."
+          },
+          {
+            title: "Regeneración Celular:",
+            text: "El Dermapen y la luz LED trabajan en conjunto para estimular la regeneración celular, promoviendo un proceso natural de renovación de la piel."
+          },
+          {
+            title: "Tratamiento No Invasivo:",
+            text: "A diferencia de procedimientos más invasivos, este tratamiento es menos agresivo y suele tener tiempos de recuperación más cortos."
+          },         
+        ]
+      },
+    condition: 'Para manchas, marcas de acné y cicatrices',
+    description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
+    duration: '1 hora',
+    generalType: 'aparatologia',    
+    img: 'assets/imgs/thumbnail720.jpg',
+    // Tratamiento para rosácea arañas vasculares y enrojecimiento
+    name: "Marcas de acné y cicatrices",
+    price: 60,
+    results: '3 - 6 semanas',
+    searchTerm: "luz led dermapen facial completo dermapen carbón carbon activo laser láser facial",            
+    shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
+    slug: 'tratamiento-acne-cicatrices',
+    type: 'cara',
+    treatmentDay: "",
+    treatmentTools: "láser facial",
+    whiteText: true,
+    requiredFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ],
+    optionalFaq: [
+      {
+        title: "s",
+        description: "a"
+      }
+    ]
+  },
+  // Columna tratamientos en folleto
+  // Cara aun
+  {
+    backToWork: 'De inmediato',
+    benefits: {
       initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
       listElements: [
         {
@@ -449,7 +509,7 @@ let TreatmentsList = [
   {
     backToWork: 'De inmediato',
     benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+      initialText: "Los beneficios del tratamiento para la hiperhidrosis pueden incluir:",
       listElements: [
         {
           title: "Reducción del mal olor corporal: ",
@@ -478,69 +538,27 @@ let TreatmentsList = [
     whiteText: true,
     requiredFaq: [
       {
-        title: "s",
-        description: "a"
-      }
+        title: "¿Qué es la hiperhidrosis?",
+        description: "La hiperhidrosis es un trastorno caracterizado por una producción excesiva de sudor, que puede afectar áreas como las axilas, las manos, los pies y el rostro."
+      },
+      {
+        title: "¿Cómo sé si necesito tratamiento para la hiperhidrosis?",
+        description: "Si experimentas sudoración excesiva que afecta tu vida diaria, como dejar manchas en la ropa, dificultades en las interacciones sociales o incomodidad física, es recomendable consultar a un médico para evaluar si necesitas tratamiento."
+      },
     ],
     optionalFaq: [
       {
-        title: "s",
-        description: "a"
-      }
+        title: "¿Qué es la hiperhidrosis?",
+        description: "La hiperhidrosis es un trastorno caracterizado por una producción excesiva de sudor, que puede afectar áreas como las axilas, las manos, los pies y el rostro."
+      },
+      {
+        title: "¿Cómo sé si necesito tratamiento para la hiperhidrosis?",
+        description: "Si experimentas sudoración excesiva que afecta tu vida diaria, como dejar manchas en la ropa, dificultades en las interacciones sociales o incomodidad física, es recomendable consultar a un médico para evaluar si necesitas tratamiento."
+      },
     ]
   },
   // tratamiento reductor goes below this
-  {
-    backToWork: 'Inmediato',
-    benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
-      listElements: [
-        {
-          title: "Relleno de arrugas y líneas finas: ",
-          text: "El ácido hialurónico es eficaz para suavizar y rellenar arrugas y líneas de expresión, proporcionando una apariencia más juvenil.",
-        },
-        {
-          title: "Restauración de volumen facial: ",
-          text: "Ayuda a restaurar el volumen perdido en áreas como mejillas, labios y mentón, mejorando la plenitud y contorno facial."
-        },
-        {
-          title: "Sin tiempo de inactividad: ",
-          text: "No requiere tiempo de recuperación significativo, lo que permite a los pacientes reanudar sus actividades diarias de inmediato."
-        },
-        {
-          title: "Resultados naturales y duraderos: ",
-          text: "Proporciona resultados inmediatos y naturales que pueden durar varios meses, dependiendo del tipo de ácido hialurónico utilizado y la zona tratada."
-        }                  
-      ]
-    },
-    condition: 'mordida cruzada, fricción dientes',
-    description: "El tratamiento para el bruxismo es un enfoque terapéutico dirigido a reducir o eliminar el hábito involuntario de rechinar o apretar los dientes, conocido como bruxismo. Este trastorno puede provocar diversos problemas dentales, musculares y de articulación temporomandibular. El objetivo es aliviar el dolor y prevenir el daño dental y muscular asociado con el bruxismo.",
-    duration: '1 hora',
-    generalType: 'estetica',    
-    img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Tratamiento bruxismo',
-    price: 300,
-    results: '1 mes',
-    searchTerm: "bruxismo dientes apretar",    
-    shortDescription: "El tratamiento para el bruxismo busca reducir o eliminar el rechinar y apretar involuntario de los dientes",
-    slug: 'tratamiento-hiperhidrosis',
-    type: 'cara',
-    treatmentDay: "",
-    treatmentTools: "",
-    whiteText: true,
-    requiredFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ],
-    optionalFaq: [
-      {
-        title: "s",
-        description: "a"
-      }
-    ]
-  },
+  
 ]
 
 export default TreatmentsList

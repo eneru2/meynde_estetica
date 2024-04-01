@@ -87,8 +87,8 @@ import { TreatmentsService } from '../../../services/treatments.service';
 
     @if(treatment.optionalFaq){    
       @for (item of treatment.optionalFaq; track $index) {
-        <details class="my-2 select-none open:select-text" name="faq">        
-          <summary class="cursor-pointer">{{item.title}}</summary>
+        <details class="my-2" name="faq">        
+          <summary class="cursor-pointer select-none">{{item.title}}</summary>
           <p class="pl-5 mt-2">{{item.description}}</p>
         </details>
       }
