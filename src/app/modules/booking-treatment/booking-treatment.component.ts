@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import TreatmentsList from '../../stores/treatments-list';
 import { TreatmentsService } from '../../services/treatments.service';
-//import Datepicker from 'vanillajs-datepicker/js/Datepicker';
-import 'vanillajs-datepicker/css/datepicker.css';
-import { getDate } from 'date-fns';
 
 @Component({
   selector: 'app-booking-treatment',
@@ -17,7 +14,7 @@ import { getDate } from 'date-fns';
       <input type="text" name="date_picker">
       <div id="date_picker"></div>
       <div class="flex gap-x-2 w-full overflow-x-hidden">
-        p>Mon</p>
+        <p>Mon</p>
         <p>Tue</p>
         <p>Wed</p>
         <p>Tue</p>
