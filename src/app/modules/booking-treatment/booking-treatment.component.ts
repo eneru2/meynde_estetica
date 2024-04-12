@@ -17,7 +17,7 @@ import { getDate } from 'date-fns';
       <input type="text" name="date_picker">
       <div id="date_picker"></div>
       <div class="flex gap-x-2 w-full overflow-x-hidden">
-        p>Mon</p>
+        <p>Mon</p>
         <p>Tue</p>
         <p>Wed</p>
         <p>Tue</p>
