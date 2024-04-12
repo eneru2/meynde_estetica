@@ -77,7 +77,7 @@ import '@splidejs/splide/css';
               </a>
             </li>
             <li class="splide__slide">
-              <a href="assets/imgs/carrusel-reviews/antes-despues2-1024x.jpg" target="_blank">
+              <a href="https://www.instagram.com/meyndeestetica/p/C4tJd03IWdN/" target="_blank">
                 <picture>
                   <source
                     srcset="assets/imgs/carrusel-reviews/antes-despues2-512x.avif"
