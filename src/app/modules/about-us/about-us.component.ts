@@ -29,10 +29,10 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
           </p>
         </div>
         <img
-          class="w-[45%] aspect-[9/11] object-cover brightness-75
+          class="w-[45%] aspect-[9/11] object-cover brightness-75 filter
           max-[960px]:aspect-video max-[960px]:w-full
           max-md:mb-8"
-          src="assets/imgs/thumbnail720.avif"
+          src="assets/imgs/nuestra-filosofia.jpg"
           alt="">
       </div>
       <div class="flex flex-row-reverse items-center gap-x-16 mt-24 max-[960px]:flex-col-reverse">
@@ -62,9 +62,12 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             type="image/jpeg">
         </picture>
       </div>
-      <h2 id="equipo" class="mt-24 text-3xl">Conoce a nuestro equipo</h2>
+      <h2
+        id="equipo"
+        class="mt-24 text-3xl max-md:mt-8">Conoce a nuestro equipo</h2>
         <div
-          class="flex flex-wrap justify-around gap-x-4 gap-y-12 mt-10">
+          class="flex flex-wrap justify-around gap-x-4 gap-y-12 mt-10
+          max-lg:mt-6 max-md:gap-y-8">
           <card
             name="Claudia"
             profession="Gestión ejecutiva"

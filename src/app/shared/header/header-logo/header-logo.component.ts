@@ -7,7 +7,7 @@ import { HeaderService } from '../../../services/header.service';
   standalone: true,
   imports: [CommonModule],
   template: `
-      <a href="/">
+      <a href="/" >
         <svg  class="w-16 max-[960px]:w-12" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 13.004 13.004">
           <g transform="translate(-2.077 -2.488)">
             <circle

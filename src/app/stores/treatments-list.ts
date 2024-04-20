@@ -2,6 +2,8 @@
   // https://www.pexels.com/search/first%20visit/
   // https://www.pexels.com/photo/specialist-doing-laser-treatment-in-spa-salon-5069611/
   // https://www.pexels.com/photo/female-patient-doing-cosmetology-procedure-4207236/
+  // https://www.pexels.com/photo/crop-unrecognizable-beautician-applying-clay-mask-to-clients-face-3985349/
+  // Gustavo Fring ... pexels
 
 let TreatmentsList = [
   // Cara
@@ -300,15 +302,15 @@ let TreatmentsList = [
     },
     condition: 'Para vellos',
     description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
-    duration: '14 minutos',
+    duration: '15 minutos',
     generalType: 'aparatologia',    
     img: 'assets/imgs/thumbnail719.jpg',
     name: 'Depilación en cara',
-    price: 29,
+    price: 30,
     results: '2 - 6 semanas',
     searchTerm: "laser láser facial fotodepilación diodo",            
     shortDescription: "Experimenta la transformación de tu piel con nuestro tratamiento facial completo. La radiofrecuencia reafirma, el Dermapen reduce arrugas y manchas, mientras que la luz LED potencia la regeneración celular. Un enfoque multifacético para una piel radiante, firme y rejuvenecida.",
-    slug: 'depilación-cara',
+    slug: 'depilacion-cara',
     type: 'cara',
     treatmentDay: "",
     treatmentTools: "láser facial, fotodepilación y diodo",
@@ -421,9 +423,9 @@ let TreatmentsList = [
     description: "Este tratamiento facial completo combina tres avanzadas técnicas para abordar de manera integral las preocupaciones estéticas más comunes, como manchas cutáneas, arrugas y flacidez. La radiofrecuencia se utiliza para estimular la producción de colágeno y mejorar la elasticidad de la piel, mientras que el Dermapen, mediante microagujas, promueve la regeneración celular y la reducción de manchas. La terapia de luz LED complementa el proceso, ofreciendo beneficios antiinflamatorios y estimulando la circulación sanguínea. Este enfoque combinado ofrece resultados notables, logrando una piel más firme, uniforme y rejuvenecida.",
     duration: '1 hora',
     generalType: 'aparatologia',    
-    img: 'assets/imgs/thumbnail720.jpg',
+    img: '/assets/imgs/thumbnail720.jpg',
     // Tratamiento para rosácea arañas vasculares y enrojecimiento
-    name: "Marcas de acné y cicatrices",
+    name: "/Marcas de acné y cicatrices",
     price: 60,
     results: '3 - 6 semanas',
     searchTerm: "luz led dermapen facial completo dermapen carbón carbon activo laser láser facial",            
@@ -451,42 +453,38 @@ let TreatmentsList = [
   {
     backToWork: 'De inmediato',
     benefits: {
-      initialText: "Los beneficios del tratamiento facial completo que combina radiofrecuencia, Dermapen y luz LED son variados y abarcan aspectos clave de la salud y apariencia de la piel:",
+      initialText: "Los beneficios de la eliminación de verrugas con plasma pen o crioterapia son:",
       listElements: [
         {
-          title: "Relleno de arrugas y líneas finas: ",
-          text: "El ácido hialurónico es eficaz para suavizar y rellenar arrugas y líneas de expresión, proporcionando una apariencia más juvenil.",
+          title: "Efectividad: ",
+          text: "Ambos métodos son altamente efectivos para eliminar verrugas, ofreciendo resultados visibles después de una sola sesión en muchos casos.",
         },
         {
-          title: "Restauración de volumen facial: ",
-          text: "Ayuda a restaurar el volumen perdido en áreas como mejillas, labios y mentón, mejorando la plenitud y contorno facial."
+          title: "Mínimamente invasivos: ",
+          text: "Tanto el plasma pen como la crioterapia son procedimientos mínimamente invasivos, lo que significa que no requieren incisiones quirúrgicas ni puntos de sutura."
         },
         {
-          title: "Sin tiempo de inactividad: ",
-          text: "No requiere tiempo de recuperación significativo, lo que permite a los pacientes reanudar sus actividades diarias de inmediato."
+          title: "Versatilidad: ",
+          text: "Tanto el plasma pen como la crioterapia pueden utilizarse para tratar una variedad de verrugas en diferentes áreas del cuerpo, ofreciendo una solución versátil para pacientes con diversas necesidades dermatológicas."
         },
-        {
-          title: "Resultados naturales y duraderos: ",
-          text: "Proporciona resultados inmediatos y naturales que pueden durar varios meses, dependiendo del tipo de ácido hialurónico utilizado y la zona tratada."
-        }                  
       ]
     },
     condition: 'arrugas líneas de expresión lineas de expresion',
-    description: "El ácido hialurónico es un tratamiento cosmético altamente efectivo utilizado para rejuvenecer la piel, rellenar arrugas y restaurar el volumen facial perdido con el tiempo. Este compuesto naturalmente presente en el cuerpo humano se inyecta en áreas específicas para mejorar la hidratación, elasticidad y firmeza de la piel, ofreciendo resultados instantáneos y de larga duración. Además de su capacidad para suavizar arrugas y líneas finas, el ácido hialurónico promueve la producción de colágeno, contribuyendo así a una piel más radiante y saludable.",
-    duration: '30 minutos',
+    description: "La eliminación de verrugas con plasma pen o crioterapia es un procedimiento dermatológico utilizado para eliminar verrugas de la piel de manera segura y efectiva. Durante el tratamiento con plasma pen, se utiliza un dispositivo que emite energía de plasma para vaporizar la verruga, mientras que en la crioterapia, se emplea frío extremo para congelar y destruir la verruga. Ambos métodos son mínimamente invasivos y se llevan a cabo en consultorios médicos o clínicas especializadas. Estos tratamientos son ideales para pacientes que desean deshacerse de verrugas sin cirugía ni cicatrices permanentes.",
+    duration: '15-30 minutos',
     generalType: 'estetica',    
     img: 'assets/imgs/thumbnail720.jpg',
-    name: 'Eliminar verrugas',
+    name: '/Eliminar verrugas',
     price: 150,
     results: 'Inmediato',
-    searchTerm: "verrugas lunares puntos de rubi rubí eliminacion",
+    searchTerm: "verrugas lunares puntos de rubi rubí eliminacion plasma pen crioterapia",
     sessionsAvailable: {
       "1": 30,
       "2": 55,        
       "3": 75,
       "6": 100
     },
-    shortDescription: "El ácido hialurónico es un tratamiento cosmético que rejuvenece la piel, rellenando arrugas y restaurando el volumen facial perdido.",
+    shortDescription: "La eliminación de verrugas con plasma pen o crioterapia es un procedimiento dermatológico no invasivo que utiliza energía de plasma o frío extremo para eliminar verrugas de la piel de manera segura y efectiva, sin dejar cicatrices permanentes.",
     slug: 'eliminacion-verrugas',
     type: 'cuerpo',
     treatmentDay: "",
@@ -500,9 +498,26 @@ let TreatmentsList = [
     ],
     optionalFaq: [
       {
-        title: "s",
-        description: "a"
-      }
+        title: "¿Qué es la eliminación de verrugas con plasma pen o crioterapia?",
+        description: "Es un procedimiento dermatológico que utiliza energía de plasma o frío extremo para eliminar verrugas de la piel de manera segura y efectiva."
+      },
+      {
+        title: "¿Cuántas sesiones se necesitan?",
+        description: "La cantidad de sesiones necesarias puede variar según el tamaño y la cantidad de verrugas a tratar, pero en muchos casos, una sola sesión es suficiente para obtener resultados satisfactorios."
+      },
+      {
+        title: "¿Cuándo se pueden ver los resultados?",
+        description: "Los resultados suelen ser visibles poco después del tratamiento, con una mejora continua a medida que la piel se cura por completo en los días posteriores al procedimiento."
+      },
+      {
+        title: "¿Cómo funciona la eliminación de verrugas con plasma pen?",
+        description: "El plasma pen emite una energía de plasma controlada que vaporiza la verruga, eliminándola de la piel sin dañar el tejido circundante."
+      },
+      {
+        title: "¿Cómo funciona la eliminación de verrugas con crioterapia?",
+        description: "En la crioterapia, se aplica frío extremo a la verruga mediante un dispositivo especial, lo que provoca la congelación y destrucción de las células afectadas."
+      },
+
     ]
   },
   // Finish verrugas and similar above

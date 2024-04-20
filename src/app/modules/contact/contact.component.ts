@@ -6,7 +6,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   imports: [ContactFormComponent],
   template: `
     <h1 class="text-3xl font-bold mb-8">Contacto</h1>
-    <div class="flex flex-wrap justify-between mb-16 gap-x-32 gap-y-10 max-md:flex-col max-md:mb-8">
+    <div class="flex flex-wrap justify-between mb-16 gap-x-32 gap-y-10 max-md:flex-col max-md:mb-8 text-lg">
       <div>
         <h2 class="uppercase font-bold">Horarios</h2>
         <p class=" text-gray-500 dark:text-slate-50 mt-4 mb-2">Lunes a viernes:</p>
@@ -23,8 +23,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       </div>
     </div>
     <contact-form></contact-form>
-    <h2 class="text-2xl font-bold mb-4">Localización</h2>
-    <div>
+    <h2 class="text-2xl font-bold mb-4">¿Cómo llegar?</h2>
+    <div class="text-lg">
       <p>        
         Nos encontramos en el barrio de Gràcia, Barcelona. 
           <br>

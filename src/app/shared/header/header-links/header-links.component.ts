@@ -9,7 +9,7 @@ import { HeaderService } from '../../../services/header.service';
       <ul
       class="flex text-xl uppercase text-current gap-x-[6vw]      
       max-[960px]:flex-col max-[960px]:items-center max-[960px]:justify-start max-[960px]:pt-36 max-[960px]:gap-y-12 max-[960px]:w-[60vw] max-[960px]:h-screen max-[960px]:top-0 max-[960px]:bg-zinc-100 max-[960px]:p-0 max-[960px]:m-0 max-[960px]:fixed z-10 max-[960px]:transition-all"
-      [ngClass]="menuOpen ? 'max-[960px]:right-0' : 'max-[960px]:right-[-80vw]'"      
+      [ngClass]="menuOpen ? 'max-[960px]:right-0 dark:bg-[#1b1b1d]' : 'max-[960px]:right-[-80vw]'"      
       >
         <li class="flex relative">
           <a 

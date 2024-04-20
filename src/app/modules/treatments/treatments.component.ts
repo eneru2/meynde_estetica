@@ -23,10 +23,13 @@ import { RouterLink } from '@angular/router';
     >
     </app-buttons>
     <ul 
-      class="grid gap-4 mt-8 grid-cols-4
-      max-[1080px]:grid-cols-3 max-[800px]:grid-cols-2 max-[600px]:grid-cols-1">
+      class="grid gap-4 mt-4 grid-cols-4
+      
+      max-[1080px]:grid-cols-3 max-[800px]:grid-cols-2 max-[600px]:grid-cols-1 ">
       @for (treatment of treatments; track $index) {
-        <li class="rounded py-4 px-5 text-lg shadow-md relative">
+        <li class="rounded py-4 px-5 text-lg shadow-md relative
+        hover:shadow-lg transition-all
+        dark:hover:shadow-lg dark:hover:shadow-white/10 dark:shadow-white/10">
           {{treatment.name}}
           <a class="absolute w-full h-full top-0 left-0" href="{{'/tratamientos/' + treatment.slug}}">
           </a>

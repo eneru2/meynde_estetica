@@ -16,13 +16,12 @@ import { HeaderMenuButtonComponent } from './header-menu-button/header-menu-butt
       class="bg-black opacity-50 z-10"
       [ngClass]="{'hidden': !maskOpen, 'absolute top-0 left-0 w-[150vw] h-screen': maskOpen}" 
       (click)="changeMenuState(!maskOpen)">
-      >
     </div>   
     <header     
       class="flex flex-col items-center absolute top-0 left-0 right-0 transition-all z-10"
       [ngClass]="{
         'shadow-sm': !mobile && !this.headerService.transparentBg,
-        'text-black hover:bg-slate-100 dark:hover:bg-[#1b1b1d] dark:text-slate-50': hovered && this.headerService.transparentBg && !mobile,
+        'text-black hover:bg-slate-100  dark:hover:bg-[#1b1b1d] dark:text-slate-50': hovered && this.headerService.transparentBg && !mobile,
         'text-zinc-100': !hovered && this.headerService.transparentBg && !mobile,
       }"
       #header

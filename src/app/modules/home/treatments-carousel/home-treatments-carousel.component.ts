@@ -107,14 +107,14 @@ import '@splidejs/splide/css';
             <a href="/tratamientos/limpieza-facial">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.avif"
-                  type="image/avif">
+                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512.avif"
+                  type="image/avof">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.webp"
-                  type="image/webp">
+                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512.webp"
+                  type="image/we2p">
                 <img
                   class="aspect-video w-full object-cover object-[45%_20%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.jpg"
+                  src="assets/imgs/carrusel-tratamientos/limpieza-facial2.jpg"
                   alt="Eliminación de verrugas, lunares y puntos de rubí"
                   type="image/jpeg">
               </picture>

@@ -26,7 +26,7 @@ import '@splidejs/splide/css';
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-              <a href="assets/imgs/carrusel-reviews/review1-1024x.jpg">
+              <a href="https://www.instagram.com/meyndeestetica/p/C5RmBvRI94V/" target="_blank">
                 <picture>
                   <source
                     srcset="assets/imgs/carrusel-reviews/review1-512x.avif"
@@ -43,7 +43,7 @@ import '@splidejs/splide/css';
               </a>
             </li>
             <li class="splide__slide">
-              <a href="assets/imgs/carrusel-reviews/antes-despues1-1024x.jpg">
+              <a href="https://www.instagram.com/meyndeestetica/p/C5j07lyIwvu/" target="_blank">
                 <picture>
                   <source
                     srcset="assets/imgs/carrusel-reviews/antes-despues1-512x.avif"

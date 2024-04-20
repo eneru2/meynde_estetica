@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import Splide from '@splidejs/splide';
-import '@splidejs/splide/css';
 
 @Component({
   selector: 'home-offers-carousel',

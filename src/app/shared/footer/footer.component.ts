@@ -8,7 +8,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
   imports: [FooterLinksComponent, FooterOthersComponent],
   template: `
     <footer 
-      class="w-[min(80rem,100%-2.5rem)] border-t-2 border-current mx-auto text-current py-5 mt-20 text-sm
+      class="w-[min(80rem,100%-2.5rem)] border-t-2 border-current mx-auto text-current py-5 mt-20 
       grid grid-cols-4 gap-4 relative
       max-md:grid-cols-2 max-[359px]:grid-cols-1">
       <ul class="pr-12 text-balance">
@@ -27,7 +27,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
               <path fill="currentColor" d="M4.05 21H3v-5.875L8 14.1l2.9 2.9q1-.575 1.863-1.238t1.587-1.387q.775-.75 1.45-1.625t1.225-1.85l-2.85-2.875L15.1 3H21v1.05q0 3.15-1.35 6.2T15.8 15.8q-2.5 2.5-5.563 3.85T4.05 21Z"/>
               <title>Icono de teléfono</title>
             </svg>
-            <span>+34 930 271 707</span>
+            <span><a href="tel:+34930271707">+34 930 271 707</a></span>
           </li>
           <li class="flex items-center gap-x-2">
             <svg class="mt-1.5" xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24">
@@ -65,21 +65,15 @@ import { FooterOthersComponent } from "./others/footer-others.component"
                   <title>Logo de X</title>
                 </svg>
               </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"/>
-                  <title>Logo de YouTube</title>
-                </svg>
-              </li>
             </ul>
           </li>
         </ul>    
       </figure>
     </footer>
     <ul class="text-current w-[min(80rem,100%-2.5rem)] mx-auto flex justify-end text-xs py-2 gap-x-2.5 gap-y-2 flex-wrap">
-      <li><a href="">Términos y Condiciones</a></li>
-      <li><a href="">Política de Privacidad</a></li>
-      <li><a href="">Política de Cookies</a></li>
+      <li><a href="/aviso-legal">Aviso legal</a></li>
+      <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+      <li><a href="/politica-de-cookies">Política de Cookies</a></li>
     </ul>
     
     `,

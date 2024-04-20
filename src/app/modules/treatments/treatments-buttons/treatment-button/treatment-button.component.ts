@@ -7,10 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   imports: [CommonModule],
   template: `  
       <button 
-        class=" uppercase text-sm font-semibold  px-1.5 py-1 rounded
+        class="uppercase text-sm font-semibold  px-1.5 py-1 rounded
          cursor-pointer
          dark:text-zinc-50"
-        [ngClass]="treatmentType === buttonType ? 'bg-black text-white'  : 'bg-transparent text-black hover:bg-zinc-200 hover:dark:text-black'"
+        [ngClass]="treatmentType === buttonType ? 'bg-black text-white dark:bg-main'  : 'bg-transparent text-black hover:bg-zinc-200 hover:dark:text-black'"
         (click)="changeTreatmentType(buttonType)">
         {{ buttonType }}</button>
   `,

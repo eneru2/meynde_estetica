@@ -5,6 +5,7 @@ import { HeaderService } from '../../../services/header.service';
 import { Title } from '@angular/platform-browser';
 import TreatmentList from '../../../stores/treatments-list'
 import { TreatmentsService } from '../../../services/treatments.service';
+
 @Component({
   selector: 'individual-treatment',
   standalone: true,
@@ -38,17 +39,21 @@ import { TreatmentsService } from '../../../services/treatments.service';
         class=" uppercase font-semibold px-2 py-1" 
         (click)="changeTab('benefits')">Beneficios</button>      
     </div>
-    <div class="flex py-4 gap-x-12">
-      <div class="max-w-[60%]">
+    <div
+      class="flex py-4 gap-x-12
+      max-lg:flex-col max-lg:gap-y-8">
+      <div
+        class="max-w-[60%] min-w-[60%]
+        max-lg:max-w-full">
         @if (treatmentDescriptionButton) {
-          <p class="">{{treatment.description}}</p>      
+          <p class=" text-lg">{{treatment.description}}</p>      
         }
         @if (treatmentDayButton) {
-          <p class="">{{treatment.treatmentDay}}</p>      
+          <p class="text-lg">{{treatment.treatmentDay}}</p>      
         }
         @if (treatmentBenefitsButton) {
-          <p class="">{{treatment.benefits.initialText}}</p>      
-          <ul class="pl-10 pb-2">
+          <p class="text-lg">{{treatment.benefits.initialText}}</p>      
+          <ul class="text-lg pl-10 pb-2">
             @for (listElement of treatment.benefits.listElements; track $index) {
               <li>
                 <span class="font-semibold">{{listElement.title}}</span>
@@ -58,7 +63,11 @@ import { TreatmentsService } from '../../../services/treatments.service';
           </ul>
         }
       </div>
-      <ul class="flex flex-col justify-between w-full h-72 p-4 gap-y-3 shadow-md">
+      <ul
+        class="flex flex-col justify-between w-full h-72 p-4 gap-y-3 shadow-md text-lg
+        max-lg:w-1/2 max-lg:self-center
+        max-md:w-2/3
+        max-sm:w-full">
         <li class="self-center font-semibold text-lg">{{treatment.name}}</li>
         <li class="flex justify-between">Duración<span class="font-semibold">{{treatment.duration}}</span></li>
         <li class="flex justify-between">Resultados<span class="font-semibold">{{treatment.results}}</span></li>
@@ -88,8 +97,8 @@ import { TreatmentsService } from '../../../services/treatments.service';
     @if(treatment.optionalFaq){    
       @for (item of treatment.optionalFaq; track $index) {
         <details class="my-2" name="faq">        
-          <summary class="cursor-pointer select-none">{{item.title}}</summary>
-          <p class="pl-5 mt-2">{{item.description}}</p>
+          <summary class="text-lg cursor-pointer select-none">{{item.title}}</summary>
+          <p class="text-lg pl-5 mt-2">{{item.description}}</p>
         </details>
       }
     }
