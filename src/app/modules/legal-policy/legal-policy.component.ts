@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <h1 class="text-3xl font-semibold text-light-main">Aviso legal</h1>
+    <h1 class="text-3xl mb-2 font-semibold text-light-main">Aviso legal</h1>
     <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), el propietario de la web , le informa de lo siguiente:</p>
     <ul>
       <li>Denominación social: Centro Medico Meynde, S.L</li>

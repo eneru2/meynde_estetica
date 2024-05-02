@@ -15,9 +15,7 @@ import { WhatsappButtonComponent } from './modules/whatsapp-button/whatsapp-butt
       class="w-[min(80rem,_100%-2.5rem)] mx-auto mt-40 max-[960px]:mt-24">
       <router-outlet></router-outlet>
     </main>
-    @defer () {
-      <app-footer class="mt-auto"></app-footer>
-    }
+    <app-footer class="mt-auto"></app-footer>
   `,
 })
 export class AppComponent {

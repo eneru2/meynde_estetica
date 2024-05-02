@@ -11,7 +11,7 @@ import { Title } from '@angular/platform-browser';
     <div class="mt-4 overflow-hidden max-md:w-full">
       <img
         class="filter grayscale-[55%] max-md:w-full max-md:h-full object-cover max-md:scale-[1.75]"
-        src="assets/imgs/map.png"
+        src="imagenes/map.png"
         alt="" />
     </div>
     <p class="mt-4">

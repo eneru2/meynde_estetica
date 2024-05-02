@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MailService } from '../../../services/mail/mail.service';
+import { Component } from '@angular/core';
 @Component({
   selector: 'contact-form',
   standalone: true,
@@ -10,7 +9,8 @@ import { MailService } from '../../../services/mail/mail.service';
         <h2 class="text-2xl font-bold mb-4">Envíanos tu mensaje</h2>
         <form 
           class="flex flex-col w-full text-lg"
-          (submit)="sendMail()">
+          method="post"
+          action="/contacto.php">
           <label class="flex flex-col">
             Nombre y apellidos
             <input
@@ -19,6 +19,7 @@ import { MailService } from '../../../services/mail/mail.service';
               dark:placeholder:text-zinc-400 dark:text-zinc-50
               focus:outline-none focus:rounded-none focus:border-main"
               id="name"
+              name="name"
               placeholder="Alex Sanchez"
               type="text"
               required>
@@ -31,6 +32,7 @@ import { MailService } from '../../../services/mail/mail.service';
             dark:placeholder:text-zinc-400 dark:text-zinc-50
               focus:outline-none focus:rounded-none focus:border-main"
               id="email"
+              name="email"
               placeholder="alexsanchez@gmail.com"
               type="email"
               required> 
@@ -43,6 +45,7 @@ import { MailService } from '../../../services/mail/mail.service';
             dark:placeholder:text-zinc-400 dark:text-zinc-50
               focus:outline-none focus:rounded-none focus:border-main"
               id="phone"
+              name="phone"
               placeholder="682 456 141"
               type="text"
               required>
@@ -57,6 +60,7 @@ import { MailService } from '../../../services/mail/mail.service';
               name=""
               rows="10"
               id="message"
+              name="message"
               placeholder="Queria saber un poco más sobre el tratamiento de ácido hialurónico, que no me quedo claro el..."></textarea>
           </label>
           <label class="flex items-center gap-x-2 mb-2">
@@ -67,7 +71,7 @@ import { MailService } from '../../../services/mail/mail.service';
               name=""
               id=""
               required>
-            <p>He leido y acepto la <a class="text-main underline underline-offset-2" href="politica-privacidad">política de privacidad.</a></p> 
+            <p>He leido y acepto la <a class="text-main underline underline-offset-2" href="politica-de-privacidad">política de privacidad.</a></p> 
           </label>
           <button
             class="bg-main hover:bg-light-main text-white self-end px-5 py-2 text-lg transition-all
@@ -88,7 +92,7 @@ import { MailService } from '../../../services/mail/mail.service';
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Centro%20M%C3%A9dico%20MEYNDE+(Centro%20M%C3%A9dico%20MEYNDE)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
           </iframe>
         </div>         
-          <!-- <img class="w-full mb-4" src="assets/imgs/mapa.svg" alt="Mapa de la zona en la que se situa el centro médico">        
+          <!-- <img class="w-full mb-4" src="imagenes/mapa.svg" alt="Mapa de la zona en la que se situa el centro médico">        
           <a
           class="absolute top-4 right-4 bg-slate-50 text-light-main font-semibold px-2 py-1.5 shadow-sm
           hover:text-main transition-all"
@@ -103,15 +107,5 @@ import { MailService } from '../../../services/mail/mail.service';
   styles: ``
 })
 export class ContactFormComponent {
-  // constructor(public mailService: MailService) {
-  // }
-
-  sendMail(){
-    const name:HTMLInputElement|null = document.querySelector("#name")
-    const email:HTMLInputElement|null = document.querySelector("#email")
-    const phone:HTMLInputElement|null = document.querySelector("#phone")
-    const message:HTMLInputElement|null = document.querySelector("#message")
-    // this.mailService.sendContactForm(name?.value, email?.value, phone?.value, message?.value)
-  }
   
 }

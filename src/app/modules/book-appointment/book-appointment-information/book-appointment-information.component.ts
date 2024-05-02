@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
         Nos preocupamos por tu bienestar brindando 
         tratamientos accesibles y trato cercano.</p>
         <h2 class="text-xl mb-2">Localización</h2>
-        <img class="mb-2" src="assets/imgs/mapa.webp" alt="Mapa">
+        <img class="mb-2" src="imagenes/mapa.webp" alt="Mapa">
         <p class="font-poppins self-end ">Carrer Mare de Deu de la Salut 78, 3D</p>
         <p class="mb-4 font-poppins self-end ">Gràcia, Barcelona 08024</p>
         <h2 class="text-xl">Horario</h2>

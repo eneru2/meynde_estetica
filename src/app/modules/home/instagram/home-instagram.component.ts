@@ -29,14 +29,14 @@ import '@splidejs/splide/css';
               <a href="https://www.instagram.com/meyndeestetica/p/C5RmBvRI94V/" target="_blank">
                 <picture>
                   <source
-                    srcset="assets/imgs/carrusel-reviews/review1-512x.avif"
+                    srcset="imagenes/carrusel-reviews/review1-512x.avif"
                     type="image/avif">
                   <source
-                    srcset="assets/imgs/carrusel-reviews/review1-512x.webp"
+                    srcset="imagenes/carrusel-reviews/review1-512x.webp"
                     type="image/webp">
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
-                    src="assets/imgs/carrusel-reviews/review1-512x.jpg"
+                    src="imagenes/carrusel-reviews/review1-512x.jpg"
                     alt="Una review positiva sobre un tratamiento con ácido hialurónico"
                     type="image/jpeg">
                 </picture>
@@ -46,31 +46,31 @@ import '@splidejs/splide/css';
               <a href="https://www.instagram.com/meyndeestetica/p/C5j07lyIwvu/" target="_blank">
                 <picture>
                   <source
-                    srcset="assets/imgs/carrusel-reviews/antes-despues1-512x.avif"
+                    srcset="imagenes/carrusel-reviews/antes-despues1-512x.avif"
                     type="image/avif">
                   <source
-                    srcset="assets/imgs/carrusel-reviews/antes-despues1-512x.webp"
+                    srcset="imagenes/carrusel-reviews/antes-despues1-512x.webp"
                     type="image/webp">
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
-                    src="assets/imgs/carrusel-reviews/antes-despues1-512x.jpg"
+                    src="imagenes/carrusel-reviews/antes-despues1-512x.jpg"
                     alt="Antes y después de una rinomodelación"
                     type="image/jpeg">
                 </picture>
               </a>
             </li>
             <li class="splide__slide">
-              <a href="assets/imgs/carrusel-reviews/review2-1024x.jpg">
+              <a href="imagenes/carrusel-reviews/review2-1024x.jpg">
                 <picture>
                   <source
-                    srcset="assets/imgs/carrusel-reviews/review2-512x.avif"
+                    srcset="imagenes/carrusel-reviews/review2-512x.avif"
                     type="image/avif">
                   <source
-                    srcset="assets/imgs/carrusel-reviews/review2-512x.webp"
+                    srcset="imagenes/carrusel-reviews/review2-512x.webp"
                     type="image/webp">
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
-                    src="assets/imgs/carrusel-reviews/review2-512x.jpg"
+                    src="imagenes/carrusel-reviews/review2-512x.jpg"
                     alt="Una review positiva sobre un tratamiento para verrugas"
                     type="image/jpeg">
                 </picture>
@@ -80,14 +80,14 @@ import '@splidejs/splide/css';
               <a href="https://www.instagram.com/meyndeestetica/p/C4tJd03IWdN/" target="_blank">
                 <picture>
                   <source
-                    srcset="assets/imgs/carrusel-reviews/antes-despues2-512x.avif"
+                    srcset="imagenes/carrusel-reviews/antes-despues2-512x.avif"
                     type="image/avif">
                   <source
-                    srcset="assets/imgs/carrusel-reviews/antes-despues2-512x.webp"
+                    srcset="imagenes/carrusel-reviews/antes-despues2-512x.webp"
                     type="image/webp">
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all "
-                    src="assets/imgs/carrusel-reviews/antes-despues2-512x.jpg"
+                    src="imagenes/carrusel-reviews/antes-despues2-512x.jpg"
                     alt="Antes y después de un relleno de labios con ácido hialurónico"
                     type="image/jpeg">
                 </picture>

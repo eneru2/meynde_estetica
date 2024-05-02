@@ -13,36 +13,36 @@ body {
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("assets/fonts/PlayfairDisplay-VariableFont_wght.woff2");  
+  src: url("fuentes/PlayfairDisplay-VariableFont_wght.woff2");  
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("assets/fonts/poppins/Poppins-Regular.ttf");
+  src: url("fuentes/poppins/Poppins-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("assets/fonts/poppins/Poppins-Medium.ttf");
+  src: url("fuentes/poppins/Poppins-Medium.ttf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: 600;
-  src: url("assets/fonts/poppins/Poppins-SemiBold.ttf");
+  src: url("fuentes/poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("assets/fonts/poppins/Poppins-Bold.ttf");
+  src: url("fuentes/poppins/Poppins-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("assets/fonts/poppins/Poppins-ExtraBold.ttf");
+  src: url("fuentes/poppins/Poppins-ExtraBold.ttf");
   font-weight: 800;
 }
 

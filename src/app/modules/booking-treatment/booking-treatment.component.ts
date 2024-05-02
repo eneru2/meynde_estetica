@@ -12,22 +12,22 @@ import TreatmentList from '../../stores/treatments-list'
     <div class="flex flex-row-reverse gap-x-24 mt-4 max-[960px]:flex-col">
       <picture 
         class="w-1/2 filter grayscale-[25%]
-        max-[1052px]:w-full "
->
+        max-[1052px]:w-full">
         <source
-          srcset="assets/imgs/contacto-768x.avif"
+          srcset="imagenes/contacto-768x.avif"
           type="image/avif">
         <source
-          srcset="assets/imgs/contacto-768x.webp"
+          srcset="imagenes/contacto-768x.webp"
           type="image/webp">
         <img
-          src="assets/imgs/contacto-768x.jpg"
+          src="imagenes/contacto-768x.jpg"
           type="image/jpeg"
           class="w-full object-cover max-[960px]:aspect-video max-[960px]:w-full"
           alt="Mujer de pie apoyada en una camilla">
       </picture>
-      <form 
-        action=""
+      <form
+        method="post"
+        action="/cita.php"
         class="flex flex-col justify-between py-24 text-lg gap-y-4 w-1/2
         max-[1052px]:w-full max-[1052px]:pt-6">
         <h1 class="text-3xl font-bold mb-2">¿Cuándo te gustaria venir?</h1>
@@ -40,6 +40,7 @@ import TreatmentList from '../../stores/treatments-list'
             dark:placeholder:text-zinc-400 dark:text-zinc-50
             focus:outline-none focus:rounded-none focus:border-main"
             id="name"
+            name="name"
             placeholder="Alex Sanchez"
             type="text"
             required>
@@ -52,6 +53,7 @@ import TreatmentList from '../../stores/treatments-list'
             dark:placeholder:text-zinc-400 dark:text-zinc-50
             focus:outline-none focus:rounded-none focus:border-main"
             id="email"
+            name="email"
             placeholder="alexsanchez@gmail.com"
             type="email"
             required> 
@@ -64,6 +66,7 @@ import TreatmentList from '../../stores/treatments-list'
             dark:placeholder:text-zinc-400 dark:text-zinc-50
             focus:outline-none focus:rounded-none focus:border-main"
             id="phone"
+            name="phone"
             placeholder="682 456 141"
             type="text"
             required>
@@ -78,6 +81,7 @@ import TreatmentList from '../../stores/treatments-list'
             #date
             (input)="selectedDay($event, date)"
             id="date"
+            name="date"
             type="date"
             required>
         </label>
@@ -88,7 +92,7 @@ import TreatmentList from '../../stores/treatments-list'
             dark:text-slate-50 *:text-slate-500
             
             focus:outline-none focus:rounded-none focus:border-main"
-            name=""
+            name="hour"
             id="hour"
             required>
             @switch (day) {
@@ -136,7 +140,7 @@ import TreatmentList from '../../stores/treatments-list'
                 <option value="20:00">20:00</option>
               }
               @default {
-                <option value="null">Escoge otra día</option>
+                <option value="null" disabled>Escoge otra día</option>
               }
             }
           </select>
@@ -147,13 +151,25 @@ import TreatmentList from '../../stores/treatments-list'
             class="flex flex-col bg-transparent border-zinc-200 border-2 mb-2 p-2 placeholder:text-zinc-600
             dark:text-zinc-50
             focus:outline-none focus:rounded-none focus:border-main" 
-            name=""
+            name="treatment"
             id="treatment">
             @for (treatment of treatments; track $index) {
               <option class="dark:text-slate-500" value="{{treatment.slug}}">{{treatment.name}}</option>
             }
           </select>
         </label>
+        <label>
+            Mensaje (opcional)
+            <textarea
+              class="bg-transparent border-zinc-200 border-2 mt-1 mb-2 py-2 px-3 text-zinc-900 resize-none w-full
+            placeholder:text-zinc-600
+            dark:placeholder:text-zinc-400 dark:text-zinc-50
+              focus:outline-none focus:rounded-none focus:border-main"
+              name="message"
+              rows="10"
+              id="message"
+              placeholder="..."></textarea>
+          </label> 
         <label class="flex items-center gap-x-2">
           <input
             class="accent-main w-5 h-5
@@ -162,7 +178,7 @@ import TreatmentList from '../../stores/treatments-list'
             name=""
             id=""
             required>
-          <p>He leido y acepto la <a class="text-main underline underline-offset-2" href="politica-privacidad">política de privacidad.</a></p>
+          <p>He leido y acepto la <a class="text-main underline underline-offset-2" href="politica-de-privacidad">política de privacidad.</a></p>
         </label>
         <button
           class="bg-main text-white py-2 px-8 self-center hover:bg-light-main transition-all
@@ -215,39 +231,17 @@ export class BookingTreatmentComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       this.treatmentSlug = params.get("slug")
-      this.treatment = TreatmentList.find((item) => item.slug == this.treatmentSlug)      
+      this.treatment = TreatmentList.find((item) => item.slug === this.treatmentSlug)      
       
       // Check if slug exists
       if(this.treatment == null){
         this.router.navigateByUrl("/cita-previa")
       } else {
-        if (typeof document !== "undefined"){
-          console.log(numDays(year, month))
+        document.addEventListener("DOMContentLoaded", () => {
           const select:any = document.getElementById("treatment")
           select.value = this.treatment.slug
-          console.log(select)
-        }
+        })
       }
     })
-
-    const weekdays = {
-      monday: 1,
-      tuesday: 2,
-      wednesday: 3,
-      thursday: 4,
-      friday: 5,
-      saturday: 6,
-      sunday: 0
-    }
-
-    const date = new Date
-    const year = date.getFullYear()
-    const month = date.getMonth()
-    const numDays= (year:number, month:number) => new Date(year, month, 0).getDate()
-    if (typeof document !== "undefined"){
-      console.log(numDays(year, month))
-    }
-    
-
   }
 }

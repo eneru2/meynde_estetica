@@ -14,14 +14,14 @@ import Splide from '@splidejs/splide';
             <a href="">
             <picture>
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/primera-visita-512x.avif"
+                  srcset="imagenes/carrusel-ofertas/primera-visita-512x.avif"
                   type="image/avif">                
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/primera-visita-512x.webp"
+                  srcset="imagenes/carrusel-ofertas/primera-visita-512x.webp"
                   type="image/webp">                
                 <img
                   class="aspect-video w-full object-cover brightness-75"                
-                  src="assets/imgs/carrusel-ofertas/primera-visita-512x.jpg"
+                  src="imagenes/carrusel-ofertas/primera-visita-512x.jpg"
                   alt="Profesional con una jeringuilla en la mano"
                   type="image/jpeg">
               </picture>
@@ -32,14 +32,14 @@ import Splide from '@splidejs/splide';
             <a href="">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/packs-combos-512x.avif"
+                  srcset="imagenes/carrusel-ofertas/packs-combos-512x.avif"
                   type="image/avif">                
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/packs-combos-512x.webp"
+                  srcset="imagenes/carrusel-ofertas/packs-combos-512x.webp"
                   type="image/webp">                
                 <img
                   class="aspect-video w-full object-cover brightness-75"                
-                  src="assets/imgs/carrusel-ofertas/packs-combos-512x.jpg"
+                  src="imagenes/carrusel-ofertas/packs-combos-512x.jpg"
                   alt="Mujer teniendo un tratamiento de luz LED"
                   type="image/jpeg">
               </picture>
@@ -51,14 +51,14 @@ import Splide from '@splidejs/splide';
               <!-- style="object-view-box: inset(0% 10% 10% 10%);" -->
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/tarjeta-regalo-meynde-512x.avif"
+                  srcset="imagenes/carrusel-ofertas/tarjeta-regalo-meynde-512x.avif"
                   type="image/avif">                
                 <source
-                  srcset="assets/imgs/carrusel-ofertas/tarjeta-regalo-meynde-512x.webp"
+                  srcset="imagenes/carrusel-ofertas/tarjeta-regalo-meynde-512x.webp"
                   type="image/webp">                
                 <img
                   class="aspect-video w-full object-cover brightness-75"                
-                  src="assets/imgs/carrusel-ofertas/tarjeta-regalo-meynde-512x.jpg"
+                  src="imagenes/carrusel-ofertas/tarjeta-regalo-meynde-512x.jpg"
                   alt="Tarjetas de regalo Meynde"
                   type="image/jpeg">
               </picture>

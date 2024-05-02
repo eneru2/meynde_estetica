@@ -27,7 +27,7 @@ import { RouterLink } from '@angular/router';
       
       max-[1080px]:grid-cols-3 max-[800px]:grid-cols-2 max-[600px]:grid-cols-1 ">
       @for (treatment of treatments; track $index) {
-        <li class="rounded py-4 px-5 text-lg shadow-md relative
+        <li class="rounded py-4 px-5 text-lg shadow-md relative flex items-center
         hover:shadow-lg transition-all
         dark:hover:shadow-lg dark:hover:shadow-white/10 dark:shadow-white/10">
           {{treatment.name}}

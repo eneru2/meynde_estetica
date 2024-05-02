@@ -23,14 +23,15 @@ import '@splidejs/splide/css';
             <a href="/tratamientos/acido-hialuronico">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relleno-labios-512x.avif"
+                  srcset="imagenes/carrusel-tratamientos/relleno-labios-512x.avif"
                   type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relleno-labios-512x.webp"
+                  srcset="imagenes/carrusel-tratamientos/relleno-labios-512x.webp"
                   type="image/webp">
                 <img
                   class="aspect-video w-full object-cover object-[45%_20%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/relleno-labios-512x.jpg"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/relleno-labios-512x.jpg"
                   alt="Ácido hialurónico"
                   type="image/jpeg">
               </picture>
@@ -44,14 +45,15 @@ import '@splidejs/splide/css';
             <a href="/tratamientos/relajante-muscular">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relajante-muscular-512x.avif"
+                  srcset="imagenes/carrusel-tratamientos/relajante-muscular-512x.avif"
                   type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relajante-muscular-512x.webp"
+                  srcset="imagenes/carrusel-tratamientos/relajante-muscular-512x.webp"
                   type="image/webp">
                 <img
                   class="aspect-video w-full object-cover scale-x-[-100%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/relajante-muscular-512x.jpg"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/relajante-muscular-512x.jpg"
                   alt="Relajante muscular"
                   type="image/jpeg">
               </picture>
@@ -65,14 +67,15 @@ import '@splidejs/splide/css';
             <a href="/tratamientos/depilacion-laser">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/depilacion-laser-512x.avif"
+                  srcset="imagenes/carrusel-tratamientos/depilacion-laser-512x.avif"
                   type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/depilacion-laser-512x.webp"
+                  srcset="imagenes/carrusel-tratamientos/depilacion-laser-512x.webp"
                   type="image/webp">
                 <img
                   class="w-full aspect-video object-cover brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/depilacion-laser-512x.jpg"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/depilacion-laser-512x.jpg"
                   alt="Depilación laser"
                   type="image/jpeg">
               </picture>
@@ -83,17 +86,18 @@ import '@splidejs/splide/css';
             </p>
           </li>
           <li class="splide__slide">
-            <a href="/tratamientos/relleno-labios">
+            <a href="/tratamientos/acido-hialuronico">
             <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relleno-labios-512x.avif"
+                  srcset="imagenes/carrusel-tratamientos/relleno-labios-512x.avif"
                   type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/relleno-labios-512x.webp"
+                  srcset="imagenes/carrusel-tratamientos/relleno-labios-512x.webp"
                   type="image/webp">
                 <img
                   class="aspect-video w-full object-cover object-[45%_20%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/relleno-labios-512x.jpg"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/relleno-labios-512x.jpg"
                   alt="Ácido hialurónico"
                   type="image/jpeg">
               </picture>
@@ -107,15 +111,16 @@ import '@splidejs/splide/css';
             <a href="/tratamientos/limpieza-facial">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512.avif"
-                  type="image/avof">
+                  srcset="imagenes/carrusel-tratamientos/limpieza-facial-512x.avif"
+                  type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512.webp"
-                  type="image/we2p">
+                  srcset="imagenes/carrusel-tratamientos/limpieza-facial-512x.webp"
+                  type="image/webp">
                 <img
                   class="aspect-video w-full object-cover object-[45%_20%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/limpieza-facial2.jpg"
-                  alt="Eliminación de verrugas, lunares y puntos de rubí"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/limpieza-facial-512x.jpg"
+                  alt="Clienta recibiendo una limpieza facial"
                   type="image/jpeg">
               </picture>
             </a>
@@ -125,24 +130,25 @@ import '@splidejs/splide/css';
             </p>
           </li>
           <li class="splide__slide">
-            <a href="">
+            <a href="/tratamientos/eliminacion-verrugas">
               <picture>
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.avif"
+                  srcset="imagenes/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.avif"
                   type="image/avif">
                 <source
-                  srcset="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.webp"
+                  srcset="imagenes/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.webp"
                   type="image/webp">
                 <img
                   class="aspect-video w-full object-cover object-[45%_20%] brightness-[65%]"
-                  src="assets/imgs/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.jpg"
+                  loading="lazy"
+                  src="imagenes/carrusel-tratamientos/eliminacion-verrugas-lunares-512x.jpg"
                   alt="Eliminación de verrugas, lunares y puntos de rubí"
                   type="image/jpeg">
               </picture>
             </a>
             <p class="text-md text-slate-500 mt-3 mb-1.5">facial</p>
             <p class="text-lg font-normal capitalize">
-              <a href="">Eliminación verrugas, lunares y puntos rubí</a>
+              <a href="/tratamientos/eliminacion-verrugas">Eliminación verrugas, lunares y puntos rubí</a>
             </p>
           </li>
         </ul>

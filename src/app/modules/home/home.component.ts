@@ -14,7 +14,7 @@ import { HomeInstagramComponent } from "./instagram/home-instagram.component"
     <hero></hero>
     @defer () {
       <home-treatments-carousel></home-treatments-carousel>  
-      <home-offers-carousel></home-offers-carousel>    
+      <!-- <home-offers-carousel></home-offers-carousel>     -->
       <home-instagram></home-instagram>
     }
   `,

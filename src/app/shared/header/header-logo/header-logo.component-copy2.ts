@@ -30,7 +30,7 @@ import { HeaderService } from '../../../services/header.service';
       </svg> 
         <!-- <img 
         class="w-16 transition-all max-[960px]:w-12"
-        src="assets/imgs/image.svg"
+        src="imagenes/image.svg"
         alt="Logo de Meynde"        
         [ngClass]="{            
           'block opacity-100': hovered && this.headerService.transparentBg && !mobile, 
@@ -38,7 +38,7 @@ import { HeaderService } from '../../../services/header.service';
         }">
         <img
         class="w-16 transition-all max-[960px]:w-12"              
-        src="assets/imgs/meynde_logo_filled.svg"
+        src="imagenes/meynde_logo_filled.svg"
         alt="Logo de Meynde"
         [ngClass]="{
           'hidden opacity-0': hovered && this.headerService.transparentBg && !mobile, 

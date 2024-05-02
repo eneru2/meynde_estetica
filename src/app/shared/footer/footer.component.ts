@@ -12,8 +12,11 @@ import { FooterOthersComponent } from "./others/footer-others.component"
       grid grid-cols-4 gap-4 relative
       max-md:grid-cols-2 max-[359px]:grid-cols-1">
       <ul class="pr-12 text-balance">
-        <a class="" href="/">
-          <img class="w-16 mb-2.5" src="assets/imgs/meynde_logo_filled.svg" alt="">
+        <a href="/">
+          <img
+            class="w-16 h-16 mb-2.5"
+            src="imagenes/meynde_logo_filled.svg"
+            alt="Logo de Meynde">
         </a>
         <p>Nos preocupamos por tu bienestar brindandote tratamientos accesibles y un trato cercano.</p>
       </ul>
@@ -43,7 +46,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
             </svg>
             <span>Carrer de la Mare de Déu de la Salut, 78, 3-D, 08024 Barcelona</span>
           </li>
-          <li class="self-end">
+          <!-- <li class="self-end">
             <ul class="flex gap-x-2.5 mt-4 self-end">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -66,7 +69,7 @@ import { FooterOthersComponent } from "./others/footer-others.component"
                 </svg>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>    
       </figure>
     </footer>

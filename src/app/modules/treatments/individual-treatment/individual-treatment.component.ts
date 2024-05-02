@@ -13,11 +13,7 @@ import { TreatmentsService } from '../../../services/treatments.service';
   template: `
     <div class="flex justify-center items-center h-[60vh] top-0 left-0 right-0 absolute z-0">
       <h1 
-        class="text-center uppercase tracking-wide text-5xl z-10 w-[min(80rem,_100%-2.5rem)] mx-auto text-balance leading-snug"
-        [ngClass]="{
-          'text-black': treatment.whiteText === false,
-          'text-white': treatment.whiteText === true,
-          }">        
+        class="text-center text-white uppercase tracking-wide text-5xl z-10 w-[min(80rem,_100%-2.5rem)] mx-auto text-balance leading-snug">
         {{treatment.name}}</h1>
       <img
         class="w-full h-full absolute object-cover brightness-50 select-none"
@@ -70,9 +66,9 @@ import { TreatmentsService } from '../../../services/treatments.service';
         max-sm:w-full">
         <li class="self-center font-semibold text-lg">{{treatment.name}}</li>
         <li class="flex justify-between">Duración<span class="font-semibold">{{treatment.duration}}</span></li>
-        <li class="flex justify-between">Resultados<span class="font-semibold">{{treatment.results}}</span></li>
+        <li class="flex justify-between">Resultados (est)<span class="font-semibold">{{treatment.results}}</span></li>
         <li class="flex justify-between">Vuelta al trabajo (est)<span class="font-semibold">{{treatment.backToWork}}</span></li>
-        <li class="flex justify-between">Precio
+        <li class="flex justify-between">Precio (est)
           <span class="font-semibold">
             @if (
               treatment.sessionsAvailable && 
@@ -83,7 +79,11 @@ import { TreatmentsService } from '../../../services/treatments.service';
             }
           </span>
         </li>
-        <li class="self-center"><button class="hover:bg-light-main bg-main text-zinc-100 px-4 py-1 text-lg transition-all">Pide cita</button></li>
+        <li class="self-center">
+          <a
+            class="hover:bg-light-main bg-main text-zinc-100 px-4 py-2 cursor-pointer text-lg transition-all"
+            href="{{ '/cita-previa/' + treatment.slug }}">            
+            Pide cita</a></li>
       </ul>
     </div>
     <h2 class="text-2xl font-medium mb-2">Preguntas frecuentes</h2>

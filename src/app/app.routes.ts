@@ -11,6 +11,7 @@ import { BookingTreatmentComponent } from './modules/booking-treatment/booking-t
 import { PrivacyPolicyComponent } from './modules/privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './modules/cookies-policy/cookies-policy.component';
 import { LegalPolicyComponent } from './modules/legal-policy/legal-policy.component';
+import { ThankYouComponent } from './modules/thank-you/thank-you.component';
 
 export const routes: Routes = [
   {
@@ -62,7 +63,11 @@ export const routes: Routes = [
     component: LegalPolicyComponent
   },
   {
+    path: "gracias", title: "Gracias por tu cita",
+    component: ThankYouComponent
+  },
+  {
     path: "**", title: "Página no encontrada",
     component: NotFoundComponent
-  },
+  }
 ];
