@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} !=on
+# Headers
+	# Cache
+	Header set Cache-Control "no-cache"
+	
+	# Security
+	Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+	Header set Content-Security-Policy "default-src 'self' 'unsafe-inline'; frame-src *.google.com; font-src * https://fonts.gstatic.com; img-src * data:; script-src * 'unsafe-inline'; object-src 'none'"
+	Header set X-XSS-Protection "1; mode=block"
+	Header set X-Frame-Options "SAMEORIGIN"
+	Header set X-Content-Type-Options "nosniff"
+	Header set Referrer-Policy "strict-origin"
+ErrorDocument 404 "/404/index.html"

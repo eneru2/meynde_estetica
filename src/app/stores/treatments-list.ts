@@ -235,7 +235,7 @@ let TreatmentsList = [
     condition: '',
     description: `El tratamiento facial combina diversas técnicas para rejuvenecer la piel. Inicia con una exfoliación suave, seguida de microdermoabrasión para eliminar células muertas y promover la regeneración celular. Luego, se realiza una extracción para eliminar impurezas y puntos negros. El tratamiento de radiofrecuencia ayuda a tensar la piel y estimular la producción de colágeno. La terapia con LED aborda problemas específicos como el acné o la hiperpigmentación. Se aplica una mascarilla personalizada para hidratar, calmar o purificar la piel, seguida de un relajante masaje facial para mejorar la circulación y obtener una apariencia radiante y saludable.`,
     duration: '1 hora',
-    generalType: 'aparatologia / estetica',    
+    generalType: 'aparatologia',    
     img: 'imagenes/thumbnail720.jpg',
     name: 'Limpieza facial',
     price: 50,

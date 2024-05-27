@@ -1,1 +1,0 @@
-ffmpeg -i .\video720p.mp4 -to 00:00:05.600 output2.avif

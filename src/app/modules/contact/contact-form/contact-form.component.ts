@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
               focus:outline-none focus:rounded-none focus:border-main"
               id="name"
               name="name"
-              placeholder="Alex Sanchez"
+              placeholder="Tu nombre y apellidos"
               type="text"
               required>
           </label>
@@ -33,7 +33,7 @@ import { Component } from '@angular/core';
               focus:outline-none focus:rounded-none focus:border-main"
               id="email"
               name="email"
-              placeholder="alexsanchez@gmail.com"
+              placeholder="Tu correo electrónico"
               type="email"
               required> 
           </label>
@@ -46,7 +46,7 @@ import { Component } from '@angular/core';
               focus:outline-none focus:rounded-none focus:border-main"
               id="phone"
               name="phone"
-              placeholder="682 456 141"
+              placeholder="Tu número de teléfono"
               type="text"
               required>
           </label>
@@ -89,6 +89,7 @@ import { Component } from '@angular/core';
             marginheight="0"
             marginwidth="0"
             loading="lazy"
+            sandbox="allow-scripts"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Centro%20M%C3%A9dico%20MEYNDE+(Centro%20M%C3%A9dico%20MEYNDE)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
           </iframe>
         </div>         
@@ -101,7 +102,7 @@ import { Component } from '@angular/core';
             Ver en Maps
           </a> -->
         
-        <p class="text-lg mt-2 max-lg:mt-4">Nos encuentras en la parte posterior del edificio, que da a Mare De Dèu de Montserrat: <b>C/ Mare de Dèu de la Salut 78, 3-D, Barcelona, CP 08024.</b> Estamos en el barrio de Gracia en Barcelona</p>
+        <p class="text-lg mt-2 max-lg:mt-4">Nos encuentras en <b>C/ Mare de Dèu de la Salut 78, 3-D, Barcelona, CP 08024.</b><br>Acceso por la parte posterior del edificio, que da a la calle Mare De Dèu de Montserrat, nº 1</p>
     </div>    
   `,
   styles: ``

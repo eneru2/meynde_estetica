@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
       loop
       id="video"
       muted
-      poster="imagenes/hero-cover.webp"
+      poster="/imagenes/hero-cover.webp"
       disablepictureinpicture
       class="top-0 left-0 absolute w-screen h-screen object-cover brightness-50 z-[-1] pointer-events-none
       max-[960px]:h-[85vh]">
       <source
-        src="videos/hero-video.avif"/>
+        src="/videos/hero-video.avif"/>
       <source
-        src="videos/hero-video.webm"
+        src="/videos/hero-video.webm"
         type="video/webm"/>
       <source
         src="videos/hero-video.mp4"

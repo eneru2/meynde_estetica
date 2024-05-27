@@ -76,10 +76,12 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
         <div
           class="flex flex-wrap justify-around gap-x-4 gap-y-12 mt-10
           max-lg:mt-6 max-md:gap-y-8">
+            <!-- profession="Gestión ejecutiva"
+            description="Claudia se unió a nosotros en 2021, ella lleva las cuentas y la gestión de la empresa."  -->
           <card
             name="Claudia"
-            profession="Gestión ejecutiva"
-            description="Claudia se unió a nosotros en 2021, ella a pivotado entre diversos roles dentro de Meynde. Desde la recepción a esteticien."
+            profession="Asistente del doctor"
+            description="Claudia se unió a nosotros en 2021, ella realiza diversas tareas dentro de la empresa." 
             imgAlt="Foto de Claudia"
             avifSrc512x="imagenes/equipo/claudia/claudia-512x.avif"
             webpSrc512x="imagenes/equipo/claudia/claudia-512x.webp"
@@ -90,7 +92,7 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
           <card
             name="Esther"
             profession="Medicina"
-            description="Esther es la integrante más reciente de Meynde. Es muy animada y divertida, a todos le anima su compañia. Ella se encarga de hacer reconocimientos médicos."
+            description="Esther es una de las integrante más reciente de Meynde. Es muy divertida, y anima a todos le anima su compañia. Ella se encarga de hacer reconocimientos médicos."
             imgAlt="Foto de Esther"
             avifSrc512x="imagenes/equipo/esther/esther-512x.avif"
             webpSrc512x="imagenes/equipo/esther/esther-512x.webp"
@@ -110,6 +112,17 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             webpSrc768x="imagenes/equipo/alejandro/alejandro-768x.webp"
             jpgSrc768x="imagenes/equipo/alejandro/alejandro-768x.jpg"/>
           <card
+            name="Agustina"
+            profession="Psicólogia"
+            description="Agustina es la más reciente de nuestras incorporaciones ella se unió a nosotros este 2024. Ella es psicólogo y se realiza reconocimientos médicos."
+            imgAlt="Foto de Alejandro"
+            avifSrc512x="imagenes/equipo/agustina/agustina-512x.avif"
+            webpSrc512x="imagenes/equipo/agustina/agustina-512x.webp"
+            jpgSrc512x="imagenes/equipo/agustina/agustina-512x.jpg"
+            avifSrc768x="imagenes/equipo/agustina/agustina-768x.avif"
+            webpSrc768x="imagenes/equipo/agustina/agustina-768x.webp"
+            jpgSrc768x="imagenes/equipo/agustina/agustina-768x.jpg"/>
+          <card
             name="David"
             profession="Reservas y Recepción"
             description="David se unió al equipo en 2021. El tiene experiencias anteriores al teléfono y ahora mismo compagina el trabajo con la carrera de psicologia."
@@ -120,9 +133,10 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
             avifSrc768x="imagenes/equipo/david/david-768x.avif"
             webpSrc768x="imagenes/equipo/david/david-768x.webp"
             jpgSrc768x="imagenes/equipo/david/david-768x.jpg"/>
+            <!-- profession="Gestión de Recepción" -->
           <card
             name="Dámaris"
-            profession="Gestión de Recepción"
+            profession="Reservas y Recepción"
             description="Dámaris se unió a nosotros en septiembre de 2020. Su trayectoria incluye una formación académica con bachillerato y un grado superior en fabricación de productos farmacéuticos. Ella dedica la mayor parte de su tiempo a hacer trabajo voluntario. Su cosa favorita es la excelente relación entre compañeros."
             imgAlt="Foto de Dámaris"
             avifSrc512x="imagenes/equipo/damaris/damaris-512x.avif"

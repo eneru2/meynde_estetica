@@ -14,8 +14,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       </div>
       <div>
         <h2 class="uppercase font-bold">Teléfonos</h2>
-        <p class=" text-gray-500 dark:text-slate-50 mt-4 mb-2">Fijos: +34 932 424 731 - +34 931 053 739</p>
-        <p class="text-gray-500 dark:text-slate-50">Whatsapp: +34 635 159 431</p>
+        <p class=" text-gray-500 dark:text-slate-50 mt-4 mb-2">Fijo: +34 930 271 707</p>
+        <p class="text-gray-500 dark:text-slate-50">WhatsApp: +34 635 159 431</p>
       </div>
       <div>
         <h2 class="uppercase font-bold">Correo</h2>
@@ -28,13 +28,13 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       <p>        
         Nos encontramos en el barrio de Gràcia, Barcelona. 
           <br>
-        Para acceder a la puerta principal de nuestras instalaciones, hay que dirigirse a atrás del parking con entrada por Mare de Deu de Montserrat.
+        Para acceder a la puerta principal de nuestras instalaciones, hay que dirigirse atrás del parking con entrada por Mare de Deu de Montserrat.
           <br>
         Los transportes públicos cercanos al centro son los siguientes:
       </p>
       <ul class="mt-4">
-        <li class="text-lg">Buses: 24, D40, H6, 116, 93, V21</li>
-        <li class="text-lg">Metro: Alfons X de la <span class="text-yellow-600">L4</span></li>
+        <li class="text-lg">Buses: <span class="font-system-ui">24, D40, H6, 116, 93, V21</span></li>
+        <li class="text-lg">Metro: Estación Alfons X de la línea <span class="text-yellow-600 font-system-ui">L4</span></li>
       </ul>
     </div>
   `,

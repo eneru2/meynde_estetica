@@ -15,7 +15,11 @@ import '@splidejs/splide/css';
   standalone: true,
   imports: [],
   template: `
-    <section class="splide mt-8 max-[960px]:mt-4 max-md:mt-4" id="slider1" aria-label="Tratamientos destacados">
+    <section 
+      class="splide mt-8 max-[960px]:mt-4 max-md:mt-4"
+      id="slider1"
+      aria-label="Tratamientos destacados"
+      role="slider">
       <h2 class="mb-4 uppercase text-2xl">Nuestros tratamientos más populares</h2>
       <div class="splide__track">
         <ul class="splide__list">

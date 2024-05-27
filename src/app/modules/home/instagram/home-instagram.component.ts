@@ -37,8 +37,7 @@ import '@splidejs/splide/css';
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
                     src="imagenes/carrusel-reviews/review1-512x.jpg"
-                    alt="Una review positiva sobre un tratamiento con ácido hialurónico"
-                    type="image/jpeg">
+                    alt="Una review positiva sobre un tratamiento con ácido hialurónico">
                 </picture>
               </a>
             </li>
@@ -54,8 +53,7 @@ import '@splidejs/splide/css';
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
                     src="imagenes/carrusel-reviews/antes-despues1-512x.jpg"
-                    alt="Antes y después de una rinomodelación"
-                    type="image/jpeg">
+                    alt="Antes y después de una rinomodelación">
                 </picture>
               </a>
             </li>
@@ -71,8 +69,7 @@ import '@splidejs/splide/css';
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all"
                     src="imagenes/carrusel-reviews/review2-512x.jpg"
-                    alt="Una review positiva sobre un tratamiento para verrugas"
-                    type="image/jpeg">
+                    alt="Una review positiva sobre un tratamiento para verrugas">
                 </picture>
               </a>
             </li>
@@ -88,8 +85,7 @@ import '@splidejs/splide/css';
                   <img
                     class="aspect-square w-full object-cover hover:contrast-75 transition-all "
                     src="imagenes/carrusel-reviews/antes-despues2-512x.jpg"
-                    alt="Antes y después de un relleno de labios con ácido hialurónico"
-                    type="image/jpeg">
+                    alt="Antes y después de un relleno de labios con ácido hialurónico">
                 </picture>
               </a>
             </li>
