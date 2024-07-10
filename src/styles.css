@@ -6,6 +6,8 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-block: 1.65rem;
 }
 
 @font-face {

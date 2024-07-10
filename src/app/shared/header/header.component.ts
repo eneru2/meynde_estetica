@@ -18,9 +18,9 @@ import { HeaderMenuButtonComponent } from './header-menu-button/header-menu-butt
       (click)="changeMenuState(!maskOpen)">
     </div>   
     <header     
-      class="flex flex-col items-center absolute top-0 left-0 right-0 transition-all z-10"
+      class="flex flex-col items-center fixed top-0 left-0 right-0 transition-all z-10"
       [ngClass]="{
-        'shadow-sm': !mobile && !this.headerService.transparentBg,
+        'shadow-sm bg-white': !mobile && !this.headerService.transparentBg,
         'text-black hover:bg-slate-100  dark:hover:bg-[#1b1b1d] dark:text-slate-50': hovered && this.headerService.transparentBg && !mobile,
         'text-zinc-100': !hovered && this.headerService.transparentBg && !mobile,
       }"

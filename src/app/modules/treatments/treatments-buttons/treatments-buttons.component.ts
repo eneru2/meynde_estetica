@@ -7,11 +7,11 @@ import { TreatmentButtonComponent } from './treatment-button/treatment-button.co
   standalone: true,
   imports: [CommonModule, TreatmentButtonComponent],
   template: `
-    <div class="flex select-none gap-x-1.5" draggable="false">     
-      <treatment-button
+    <div class="flex select-none gap-x-5" draggable="false">     
+      <!-- <treatment-button
         (changeTreatmentTypeEvent)="changeTreatmentType($event)"
         treatmentType={{treatmentType}}
-        buttonType="todos"/>
+        buttonType="todos"/> -->
       <treatment-button
         (changeTreatmentTypeEvent)="changeTreatmentType($event)"
         treatmentType={{treatmentType}}
@@ -29,7 +29,7 @@ import { TreatmentButtonComponent } from './treatment-button/treatment-button.co
   styles: ``
 })
 export class ButtonsComponent {
-  @Input() treatmentType = "todos"
+  @Input() treatmentType = "cara"
   @Output() changeTreatmentTypeEvent = new EventEmitter()
 
   changeTreatmentType(treatmentType:string){

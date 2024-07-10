@@ -5,14 +5,20 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   selector: 'treatment-button',
   standalone: true,
   imports: [CommonModule],
-  template: `  
-      <button 
-        class="uppercase text-sm font-semibold  px-1.5 py-1 rounded
-         cursor-pointer
+  template: `
+  <!-- border-b-[1px] border-main   -->
+      <a
+        href="{{ '/tratamientos#' + treatmentType}}"
+        class="uppercase text-lg p-1.5 tracking-wider
+         text-main
+        cursor-pointer transition-all relative
+          before:w-[60%] before:h-[1.25px] before:bg-main before:absolute before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:transition-all
+'bg-transparent  hover:text-black hover:border-black hover:dark:text-black'
+        hover:before:bg-black
          dark:text-zinc-50"
-        [ngClass]="treatmentType === buttonType ? 'bg-black text-white dark:bg-main'  : 'bg-transparent text-black hover:bg-zinc-200 hover:dark:text-black'"
         (click)="changeTreatmentType(buttonType)">
-        {{ buttonType }}</button>
+        {{ buttonType }}</a>
+        <!-- [ngClass]="treatmentType === buttonType ? 'bg-black text-white dark:bg-main'  : " -->
   `,
   styles: ``
 })
